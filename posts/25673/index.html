@@ -6,13 +6,13 @@
     
     
     
-    <title>从前慢 | Ellis | 一个萌萌哒小码农</title>
+    <title>Hibernate | Ellis | 一个萌萌哒小码农</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#77AAFF">
     
     
-    <meta name="keywords" content="poem">
+    <meta name="keywords" content="ssh">
     
     
 
@@ -40,16 +40,16 @@
 
     
     <meta name="description" content="生命在于折腾">
-<meta name="keywords" content="poem">
+<meta name="keywords" content="ssh">
 <meta property="og:type" content="article">
-<meta property="og:title" content="从前慢">
-<meta property="og:url" content="http://ellisl.club/posts/24768/index.html">
+<meta property="og:title" content="Hibernate">
+<meta property="og:url" content="http://ellisl.club/posts/25673/index.html">
 <meta property="og:site_name" content="Ellis">
 <meta property="og:description" content="生命在于折腾">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-28T05:53:29.670Z">
+<meta property="og:updated_time" content="2018-04-28T06:00:14.795Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="从前慢">
+<meta name="twitter:title" content="Hibernate">
 <meta name="twitter:description" content="生命在于折腾">
     
         <link rel="alternate" type="application/atom+xml" title="Ellis" href="/atom.xml">
@@ -154,7 +154,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">从前慢</div>
+        <div class="flex-col header-title ellipsis">Hibernate</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -191,20 +191,27 @@
 
 <div class="container body-wrap">
     
-<article id="post-poem"
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Hibernate-小结"><span class="post-toc-number">1.</span> <span class="post-toc-text">Hibernate 小结</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Hibernate的优势"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Hibernate的优势:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#ORM"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">ORM:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#实体类"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">实体类:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#持久态对象的三种状态"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">持久态对象的三种状态:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Hibernate的一级缓存和二级缓存"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">Hibernate的一级缓存和二级缓存</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#get和load的区别"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">get和load的区别:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#SessionFactory"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">SessionFactory:</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+   
+<article id="post-HibernateNote"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">从前慢</h1>
+        <h1 class="post-card-title">Hibernate</h1>
         <div class="post-meta">
             <i class="icon icon-lg icon-calendar-o"></i>
             发表于
-            <time class="post-time" title="2018-04-28 13:06:24" datetime="2018-04-28T05:06:24.000Z"  itemprop="datePublished">2018-04-28</time>
+            <time class="post-time" title="2018-04-28 13:25:41" datetime="2018-04-28T05:25:41.000Z"  itemprop="datePublished">2018-04-28</time>
 
             <br id="mybreak"/>
             
 	<i class="icon icon-lg icon-folder-o"></i>
-	分类：<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/诗歌/">诗歌</a></li></ul>
+	分类：<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/SSH框架/">SSH框架</a></li></ul>
 
 
             <i>·</i>
@@ -217,22 +224,34 @@
         </div>
         <div class="post-count-custom">
             <i class="icon icon-lg icon-comment-o"></i>
-            阅读本文可能花费您&nbsp;<span class="post-count">1</span>&nbsp;分钟
+            阅读本文可能花费您&nbsp;<span class="post-count">2</span>&nbsp;分钟
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>记得早先少年时</p>
-<p>大家诚诚恳恳</p>
-<p>说一句 是一句</p>
-<p>清早上火车站</p>
+            <h2 id="Hibernate-小结"><a href="#Hibernate-小结" class="headerlink" title="Hibernate 小结"></a>Hibernate 小结</h2><p>Hibernate是一个开放源码的对象关系映射框架,他对JDBC进行了轻量级的对象封装它将实体类和数据库建立映射关系,是一个全自动的ORM框架,是java持久层框架之一</p>
 <a id="more"></a>
-<p>长街黑暗无行人</p>
-<p>卖豆浆的小店冒着热气</p>
-<p>从前的日色变得慢</p>
-<p>车，马，邮件都慢</p>
-<p>一生只够爱一个人</p>
-<p>从前的锁也好看</p>
-<p>钥匙精美有样子</p>
-<p>你锁了 人家就懂了—木心</p>
+<h3 id="Hibernate的优势"><a href="#Hibernate的优势" class="headerlink" title="Hibernate的优势:"></a>Hibernate的优势:</h3><p>1.对JDBC进行了轻量级的对象封装,简化了DAO层繁琐的重复性代码,减少了内存消耗,加快了运行效率</p>
+<p>2.Hibernate是一个基于JDBC的主流持久化框架，是一个优秀的ORM实现，简化了DAO层编码工作</p>
+<p>3.Hibernate支持很多关系型数据库</p>
+<p>4.开放源码,可扩展性强</p>
+<h3 id="ORM"><a href="#ORM" class="headerlink" title="ORM:"></a>ORM:</h3><p>对象关系映射:就是实体类和数据库表建立对应关系</p>
+<p>通过Hibernate映射文件和Hibernate的核心配置文件实现</p>
+<p>操作对象就相当于操作数据库表</p>
+<p>执行原理:</p>
+<p>1.get()在程序运行期间利用反射技术动态创建对象</p>
+<p>2.根据hbm配置文件调用set方法进行绑定一一映射</p>
+<h3 id="实体类"><a href="#实体类" class="headerlink" title="实体类:"></a>实体类:</h3><p>1.实现序列化接口</p>
+<p>2.私有化成员变量</p>
+<p>3.提供无参构造(Hibernate反射创建对象用)</p>
+<p>4.提供set/get方法</p>
+<h3 id="持久态对象的三种状态"><a href="#持久态对象的三种状态" class="headerlink" title="持久态对象的三种状态:"></a>持久态对象的三种状态:</h3><p>1.瞬时态:不存在持久化标识OID 尚未与Hibernate Session关联对象,数据库中没有相应记录</p>
+<p>2.持久态:存在持久化标识OID,与当前session有关联,并且关联的session没有关闭,数据库中有相应记录</p>
+<p>3.托管态:存在持久化标识OID,与当前session没有关联,在数据库中有相应记录</p>
+<h3 id="Hibernate的一级缓存和二级缓存"><a href="#Hibernate的一级缓存和二级缓存" class="headerlink" title="Hibernate的一级缓存和二级缓存"></a>Hibernate的一级缓存和二级缓存</h3><p>Hibernate向一级缓存存放数据时(保存在session中),同时保存快照数据(快照数据不可操作),当修改一级缓存中的数据进行flush操作时,会将session的数据和快照中的数据进行对比,若不一致,则会将session一级缓存中的数据更新到数据库中,同时更新快照区</p>
+<h3 id="get和load的区别"><a href="#get和load的区别" class="headerlink" title="get和load的区别:"></a>get和load的区别:</h3><p>get如果没有找到会返回null,load如果没有找到会抛出异常</p>
+<p>get会先查一级缓存,再查二级缓存,然后再查数据库</p>
+<p>load会先查一级缓存,如果没找到就创建代理对象,等需要的时候去查询二级缓存和数据库(延迟加载)</p>
+<h3 id="SessionFactory"><a href="#SessionFactory" class="headerlink" title="SessionFactory:"></a>SessionFactory:</h3><p>SessionFactory是一个用于创建Session对象的工厂,是线程安全的,所以多个线程可以同时使用一个</p>
+<p>SessionFactory.同时它里面还包含着对象关系映射有关的所以元数据,他是不可变的,一旦创建好就<br>不能进行修改</p>
 
         </div>
 
@@ -240,12 +259,12 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2018-04-28T05:53:29.670Z" itemprop="dateUpdated">2018-04-28 13:53:29</time>
+    Last updated: <time datetime="2018-04-28T06:00:14.795Z" itemprop="dateUpdated">2018-04-28 14:00:14</time>
 </span>
 
 
         
-        原文链接：<a href="/posts/24768/" target="_blank" rel="external">http://ellisl.club/posts/24768/</a>
+        原文链接：<a href="/posts/25673/" target="_blank" rel="external">http://ellisl.club/posts/25673/</a>
         
     </div>
     <footer>
@@ -267,7 +286,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/poem/">poem</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssh/">ssh</a></li></ul>
 
 
             
@@ -277,7 +296,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://ellisl.club/posts/24768/&title=《从前慢》 — Ellis&pic=http://ellisl.club/img/head.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://ellisl.club/posts/25673/&title=《Hibernate》 — Ellis&pic=http://ellisl.club/img/head.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -287,25 +306,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://ellisl.club/posts/24768/&title=《从前慢》 — Ellis&source=记得早先少年时
-大家诚诚恳恳
-说一句 是一句
-清早上火车站" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://ellisl.club/posts/25673/&title=《Hibernate》 — Ellis&source=Hibernate 小结Hibernate是一个开放源码的对象关系映射框架,他对JDBC进行了轻量级的对象封装它将实体类和数据库建立映射关系,是一个全自动..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://ellisl.club/posts/24768/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://ellisl.club/posts/25673/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《从前慢》 — Ellis&url=http://ellisl.club/posts/24768/&via=http://ellisl.club" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hibernate》 — Ellis&url=http://ellisl.club/posts/25673/&via=http://ellisl.club" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://ellisl.club/posts/24768/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://ellisl.club/posts/25673/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -325,17 +341,15 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/posts/25673/" id="post-prev" class="post-nav-link">
-        <h4 class="title" >
-          上一篇：Hibernate
-        </h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
+  
+    <div class="waves-block waves-effect next">
+      <a href="/posts/24768/" id="post-next" class="post-nav-link">
+        <h4 class="title" data-hover="下一篇：从前慢">下一篇：从前慢</h4>
+      </a>
+    </div>
   
 </nav>
 
@@ -432,7 +446,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://ellisl.club/posts/24768/&title=《从前慢》 — Ellis&pic=http://ellisl.club/img/head.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://ellisl.club/posts/25673/&title=《Hibernate》 — Ellis&pic=http://ellisl.club/img/head.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -442,25 +456,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://ellisl.club/posts/24768/&title=《从前慢》 — Ellis&source=记得早先少年时
-大家诚诚恳恳
-说一句 是一句
-清早上火车站" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://ellisl.club/posts/25673/&title=《Hibernate》 — Ellis&source=Hibernate 小结Hibernate是一个开放源码的对象关系映射框架,他对JDBC进行了轻量级的对象封装它将实体类和数据库建立映射关系,是一个全自动..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://ellisl.club/posts/24768/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://ellisl.club/posts/25673/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《从前慢》 — Ellis&url=http://ellisl.club/posts/24768/&via=http://ellisl.club" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hibernate》 — Ellis&url=http://ellisl.club/posts/25673/&via=http://ellisl.club" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://ellisl.club/posts/24768/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://ellisl.club/posts/25673/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -471,7 +482,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p class="wechatshare">扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABvklEQVR42u3ay2oDMRAEQP//T28g12DRrZdNKJ2C2axLPgyaab1e8Xp+V/LM3yfHn79OLFxc3GXuM1zvXj1+Pv+v3ICLi3ufOy5e+TbyHyJ5Dy4u7vdz57b07qCDi4v7P7jjTxJ0QsfFxf0ebnIEmWtmxo3QwV4NFxd3gdsOTE/8fXC+i4uLW3KfcuURS37EKb4dFxf3Cjc5fLTxyVz0UoxicXFxD3N3jTg3tCuJChcX9wp3veFpr2TNxTYRGhcX9wB3pTC1LVB+xInOZbi4uFu5+W7a6LRtiqISiYuLe4XbQudGJ/n1i6iA4uLiHubmZaUtUrvaHlxc3Pvc9mvmhqp5+zQOWnBxcW9ykyLybFptHIuLi3ufuxJ+rF+zyGe6uLi4N7l5mJoUprmiVg9lcHFxD3PnApK5VicviG/fiYuLe5HbXpioL1Hlw9CkkOHi4l7hzg01kmFo2wgVdlxc3GPctqDMxSdz8WodvuLi4m7l5sOLdlySb6zYMC4u7kVuXrza59sWaDINxsXF/RC3jWNbXPQMLi7uV3J3habt5QxcXNz73JU2JgpC7o9FcHFxLw5Mi6KzENzi4uJ+iPsD29UGHKpmDOkAAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABvUlEQVR42u3ay24CMQwFUP7/p+m2Emh6bU8MlU5WFQyZky6s+PF4xOt5uX4/c/3867ePEwsXF3fMPUe5BiV7vtkBFxd3kZtvl8SW/Fe5ARcX9/u5Cb26Py4u7n/kVoNa9RNcXNxv41ZTmteN8gMs5Wq4uLgDbl6lPPf3kfouLi5ui/tsrcnFJQ9eb96Li4u7wq0GnWqLpRqXomPj4uKucK+DThV0vc+kmIKLi7vJTR7KQ1gStnqtXFxc3H1utXiRD13dW2TBxcU9za0mKtVnqtedKOHBxcVd5+YvqJZH541YXFzcTW4SRHJoEqryf1D5ZoSLi3srt9o+yRux1evUH8kPLi7uYe4kDPUaLdWZq0J9FxcX9ybufEiiVyqtpli4uLib3OTK0jtMlZIXUHBxcU9zewOaycEm9ChXw8XFPcbNixfzy83kUoWLi7vJfRbXXeGsl1bh4uLucHsFzd7oVTU4jtC4uLhjbjV49Roheeslaqjg4uKucAsDEL1ebiv5KfR/cHFxP8TNiya9AY5yFQcXF/cLuPcWO5qBDxcXd5E7SX56ZZTRNBkuLu5hbv76XokkD1LVsTBcXNwD3B97f75VP7vIMAAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 
