@@ -158,7 +158,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="検索">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -181,7 +181,7 @@
             </h1>
             <h5 class="subtitle">
                 
-                    
+                    在Web全栈的道路上努力前行
                 
             </h5>
         </div>
@@ -191,6 +191,73 @@
 
 <div class="container body-wrap">
     <ul class="post-list">
+    
+        <li class="post-list-item fade">
+            <article id="post-HibernateNote"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a href="/posts/25672/">Hibernate</a>
+    </h3>
+  
+
+
+
+
+     <div class="post-meta">
+        <time class="post-time" title="2018-04-28 13:25:41" datetime="2018-04-28T05:25:41.000Z"  itemprop="datePublished">2018-04-28</time>
+
+    </div>
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        <h2 id="Hibernate-小结"><a href="#Hibernate-小结" class="headerlink" title="Hibernate 小结"></a>Hibernate 小结</h2><p>Hibernate是一个开放源码的对象关系映射框架,他对JDBC进行了轻量级的对象封装它将实体类和数据库建立映射关系,是一个全自动的ORM框架,是java持久层框架之一</p>
+<h3 id="Hibernate的优势"><a href="#Hibernate的优势" class="headerlink" title="Hibernate的优势:"></a>Hibernate的优势:</h3><p>1.对JDBC进行了轻量级的对象封装,简化了DAO层繁琐的重复性代码,减少了内存消耗,加快了运行效率</p>
+<p>2.Hibernate是一个基于JDBC的主流持久化框架，是一个优秀的ORM实现，简化了DAO层编码工作</p>
+<p>3.Hibernate支持很多关系型数据库</p>
+<p>4.开放源码,可扩展性强</p>
+<h3 id="ORM"><a href="#ORM" class="headerlink" title="ORM:"></a>ORM:</h3><p>对象关系映射:就是实体类和数据库表建立对应关系</p>
+<p>通过Hibernate映射文件和Hibernate的核心配置文件实现</p>
+<p>操作对象就相当于操作数据库表</p>
+<p>执行原理:</p>
+<p>1.get()在程序运行期间利用反射技术动态创建对象</p>
+<p>2.根据hbm配置文件调用set方法进行绑定一一映射</p>
+<h3 id="实体类"><a href="#实体类" class="headerlink" title="实体类:"></a>实体类:</h3><p>1.实现序列化接口</p>
+<p>2.私有化成员变量</p>
+<p>3.提供无参构造(Hibernate反射创建对象用)</p>
+<p>4.提供set/get方法</p>
+<h3 id="持久态对象的三种状态"><a href="#持久态对象的三种状态" class="headerlink" title="持久态对象的三种状态:"></a>持久态对象的三种状态:</h3><p>1.瞬时态:不存在持久化标识OID 尚未与Hibernate Session关联对象,数据库中没有相应记录</p>
+<p>2.持久态:存在持久化标识OID,与当前session有关联,并且关联的session没有关闭,数据库中有相应记录</p>
+<p>3.托管态:存在持久化标识OID,与当前session没有关联,在数据库中有相应记录</p>
+<h3 id="Hibernate的一级缓存和二级缓存"><a href="#Hibernate的一级缓存和二级缓存" class="headerlink" title="Hibernate的一级缓存和二级缓存"></a>Hibernate的一级缓存和二级缓存</h3><p>Hibernate向一级缓存存放数据时(保存在session中),同时保存快照数据(快照数据不可操作),当修改一级缓存中的数据进行flush操作时,会将session的数据和快照中的数据进行对比,若不一致,则会将session一级缓存中的数据更新到数据库中,同时更新快照区</p>
+<h3 id="get和load的区别"><a href="#get和load的区别" class="headerlink" title="get和load的区别:"></a>get和load的区别:</h3><p>get如果没有找到会返回null,load如果没有找到会抛出异常</p>
+<p>get会先查一级缓存,再查二级缓存,然后再查数据库</p>
+<p>load会先查一级缓存,如果没找到就创建代理对象,等需要的时候去查询二级缓存和数据库(延迟加载)</p>
+<h3 id="SessionFactory"><a href="#SessionFactory" class="headerlink" title="SessionFactory:"></a>SessionFactory:</h3><p>SessionFactory是一个用于创建Session对象的工厂,是线程安全的,所以多个线程可以同时使用一个</p>
+<p>SessionFactory.同时它里面还包含着对象关系映射有关的所以元数据,他是不可变的,一旦创建好就<br>不能进行修改</p>
+
+    
+        <div>
+            <a href="/posts/25672/" class="post-more waves-button">
+                Continue reading...
+            </a>
+        </div>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssh/">ssh</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
     
         <li class="post-list-item fade">
             <article id="post-poem"
@@ -232,7 +299,7 @@
     
         <div>
             <a href="/posts/24768/" class="post-more waves-button">
-                続きを読む…
+                Continue reading...
             </a>
         </div>
     </div>
@@ -283,7 +350,7 @@
         </span>
         <br/>
 
-        <span class="license">このブログの内容物は<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際ライセンスの下に提供されています</a></span>
+        <span class="license">This blog is licensed under a <a rel="license" rel="external nofollow" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
     </div>
 </footer>
 
