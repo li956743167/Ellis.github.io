@@ -6,7 +6,7 @@
     
     
     
-    <title>Ellis | 一个萌萌哒小码农</title>
+    <title>tags | Ellis | 一个萌萌哒小码农</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#77AAFF">
@@ -39,16 +39,17 @@
 
 
     
-    <meta name="description" content="Ellis">
+    <meta name="description" content="type: “tags”layout: tags">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Ellis">
-<meta property="og:url" content="http://ellisl.club/index.html">
+<meta property="og:title" content="tags">
+<meta property="og:url" content="http://ellisl.club/blog/tags/index.html">
 <meta property="og:site_name" content="Ellis">
-<meta property="og:description" content="Ellis">
+<meta property="og:description" content="type: “tags”layout: tags">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-28T06:35:42.369Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ellis">
-<meta name="twitter:description" content="Ellis">
+<meta name="twitter:title" content="tags">
+<meta name="twitter:description" content="type: “tags”layout: tags">
     
         <link rel="alternate" type="application/atom+xml" title="Ellis" href="/atom.xml">
     
@@ -65,7 +66,7 @@
 
 <body>
     <div id="loading" class="active"></div>
-    <aside id="menu"   >
+    <aside id="menu"  class="hide" >
   <div class="inner flex-row-vertical">
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
@@ -86,7 +87,7 @@
     <div class="scroll-wrap flex-col">
       <ul class="nav">
         
-              <li class="waves-block waves-effect active">
+              <li class="waves-block waves-effect">
                   <a href="/"  >
                     <i class="icon icon-lg icon-home"></i>
                     <span>主 页</span><i class="icon icon-lg icon-caret-left"></i>
@@ -107,7 +108,7 @@
                   </a>
               </li>
             
-              <li class="waves-block waves-effect">
+              <li class="waves-block waves-effect active">
                   <a href="/blog/tags"  >
                     <i class="icon icon-lg icon-tags"></i>
                     <span>标 签</span><i class="icon icon-lg icon-caret-left"></i>
@@ -152,7 +153,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Ellis</div>
+        <div class="flex-col header-title ellipsis">tags</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -169,19 +170,29 @@
         </a>
     </div>
 </header>
-<header class="content-header index-header">
+<header class="content-header page-header">
     
     
     <div class="container fade-scale">
         <div id="myheader">
             <h1 class="title">
-                 
-                    Ellis
                 
             </h1>
             <h5 class="subtitle">
                 
-                    在Web全栈的道路上努力前行
+                    <h1 id="pagetitle" class="archivestitle"></h1>
+                    <script>
+                        if(location.href.indexOf('about')!=-1){
+                            pagetitle.textContent = '一个萌萌哒小码农';
+                        }else if(location.href.indexOf('tags')!=-1||location.href.indexOf('categories')!=-1){
+                            var a=location.href.substring(location.href.length-5,location.href.length-1);
+                            if(a==='tags'){
+                                pagetitle.textContent = '不积小流无以成江海';
+                            }else if(a==='ries'){
+                                pagetitle.textContent = '不积跬步无以至千里';
+                            }
+                        }
+                    </script>
                 
             </h5>
         </div>
@@ -189,107 +200,65 @@
 
 </header>
 
+
 <div class="container body-wrap">
-    <ul class="post-list">
-    
-        <li class="post-list-item fade">
-            <article id="post-HibernateNote"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/posts/25673/">Hibernate</a>
-    </h3>
-  
-
-
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2018-04-28 13:25:41" datetime="2018-04-28T05:25:41.000Z"  itemprop="datePublished">2018-04-28</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        <h2 id="Hibernate-小结"><a href="#Hibernate-小结" class="headerlink" title="Hibernate 小结"></a>Hibernate 小结</h2><p><br></p>
-<h3 id="Hibernate简介"><a href="#Hibernate简介" class="headerlink" title="Hibernate简介:"></a>Hibernate简介:</h3><p>Hibernate是一个开放源码的对象关系映射框架,他对JDBC进行了轻量级的对象封装它将实体类和数据库建立映射关系,是一个全自动的ORM框架,是java持久层框架之一</p>
-<h3 id="Hibernate的优势"><a href="#Hibernate的优势" class="headerlink" title="Hibernate的优势:"></a>Hibernate的优势:</h3><p>1.对JDBC进行了轻量级的对象封装,简化了DAO层繁琐的重复性代码,减少了内存消耗,加快了运行效率</p>
-<p>2.Hibernate是一个基于JDBC的主流持久化框架，是一个优秀的ORM实现，简化了DAO层编码工作</p>
-<p>3.Hibernate支持很多关系型数据库</p>
-<p>4.开放源码,可扩展性强</p>
-    
-        <div>
-            <a href="/posts/25673/" class="post-more waves-button">
-                Leer más
-            </a>
-        </div>
-    </div>
-    
-    <div class="post-footer">
+    <article class="page-article fade" itemprop="blogPage">
         
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssh/">ssh</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-poem"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/posts/24768/">从前慢</a>
-    </h3>
-  
-
-
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2018-04-28 13:06:24" datetime="2018-04-28T05:06:24.000Z"  itemprop="datePublished">2018-04-28</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        <div style="align-content: center;"><br> <span>记得早先少年时 </span><br><br> <span>大家诚诚恳恳 </span><br><br> <span> 说一句 是一句 </span><br><br></div>
-
-<p> 清早上火车站 </p>
-<p> 长街黑暗无行人 </p>
-<p> 卖豆浆的小店冒着热气 </p>
-    
-        <div>
-            <a href="/posts/24768/" class="post-more waves-button">
-                Leer más
-            </a>
-        </div>
-    </div>
-    
-    <div class="post-footer">
+            <div class="card page-about-me flex-row">
+                <a href="/" class="avatar waves-effect waves-circle waves-light"><img src="/img/head.jpg"></a>
+                <div class="content flex-col">
+                    <p><strong>E l l i s</strong></p>
+                    <p><em>一个萌萌哒小码农</em></p>
+                    <p>业精于勤荒于嬉，行成于思毁于随</p>
+                </div>
+            </div>
         
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/poem/">poem</a></li></ul>
 
+        
+    <div class="page-reward">
+        <nav class="myreward">
+            <a id="rewardBtn" href="javascript:;"><span>打&nbsp;赏</span><span>装成好像很多人打赏的样子</span></a>
+        </nav>
     </div>
-    
-</article>
 
-        </li>
+
+
+        
     
-    </ul>
 
     
+
+    
+
+
+    </article>
+    
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        <span>感谢您的鼓励支持！</span>
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" data-img="/img/dog.png" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.png" data-alipay="/img/alipay.png">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechatPay">&nbsp;&nbsp;微信&nbsp;&nbsp;</span>
+                <span class="reward-toggle-item alipayPay">支付宝</span>
+            </div>
+        </label>
+        
+        <i class="icon icon-caret-up"></i>
+    </div>
+</div>
+
 
 </div>
 
@@ -344,7 +313,7 @@
 
 <!-- 主题配置脚本 -->
 <script>
-var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
 </script>
 
 <!-- jquery -->
