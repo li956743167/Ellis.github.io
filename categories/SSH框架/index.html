@@ -6,7 +6,7 @@
     
     
     
-    <title>Ellis | 一个萌萌哒小码农</title>
+    <title>分类: SSH框架 | Ellis | 一个萌萌哒小码农</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#77AAFF">
@@ -42,7 +42,7 @@
     <meta name="description" content="Ellis">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ellis">
-<meta property="og:url" content="http://ellisl.club/index.html">
+<meta property="og:url" content="http://ellisl.club/categories/SSH框架/index.html">
 <meta property="og:site_name" content="Ellis">
 <meta property="og:description" content="Ellis">
 <meta property="og:locale" content="default">
@@ -86,7 +86,7 @@
     <div class="scroll-wrap flex-col">
       <ul class="nav">
         
-              <li class="waves-block waves-effect active">
+              <li class="waves-block waves-effect">
                   <a href="/"  >
                     <i class="icon icon-lg icon-home"></i>
                     <span>主 页</span><i class="icon icon-lg icon-caret-left"></i>
@@ -100,7 +100,7 @@
                   </a>
               </li>
             
-              <li class="waves-block waves-effect">
+              <li class="waves-block waves-effect active">
                   <a href="/categories"  >
                     <i class="icon icon-lg icon-th-list"></i>
                     <span>分 类</span><i class="icon icon-lg icon-caret-left"></i>
@@ -152,7 +152,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Ellis</div>
+        <div class="flex-col header-title ellipsis">分类: SSH框架</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -169,19 +169,29 @@
         </a>
     </div>
 </header>
-<header class="content-header index-header">
+<header class="content-header categories-header">
     
     
     <div class="container fade-scale">
         <div id="myheader">
             <h1 class="title">
-                 
-                    Ellis
                 
             </h1>
             <h5 class="subtitle">
                 
-                    在Web全栈的道路上努力前行
+                    <h1 id="pagetitle" class="archivestitle"></h1>
+                    <script>
+                        if(location.href.indexOf('about')!=-1){
+                            pagetitle.textContent = '一个萌萌哒小码农';
+                        }else if(location.href.indexOf('tags')!=-1||location.href.indexOf('categories')!=-1){
+                            var a=location.href.substring(location.href.length-5,location.href.length-1);
+                            if(a==='tags'){
+                                pagetitle.textContent = '不积小流无以成江海';
+                            }else if(a==='ries'){
+                                pagetitle.textContent = '不积跬步无以至千里';
+                            }
+                        }
+                    </script>
                 
             </h5>
         </div>
@@ -189,14 +199,28 @@
 
 </header>
 
-<div class="container body-wrap">
-    <ul class="post-list">
+<div class="container body-wrap fade">
     
-        <li class="post-list-item fade">
-            <article id="post-HibernateNote"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    
+        
+        
+        <h5 class="tag-tip">
+            <i class="icon icon-tag"></i>
+            关于
+            <span style="color:rgb(100, 100, 100)">SSH框架</span>
+            共&nbsp;1&nbsp;篇文章</h5>
+        <div class="waterfall">
+            
+                <article class="archive-article" onclick="location.href='/posts/25672/'">
+    <div class="archive-article-date">
+      
+      <time class="my-post-time">
+        <i class="icon icon-lg icon-file-text-o"></i>
+        &nbsp;
+          2018-04-28
+      </time>
+    </div>
+    <div class="archive-article-inner">
+      
 
 
   
@@ -207,85 +231,17 @@
 
 
 
-
-     <div class="post-meta">
-        <time class="post-time" title="2018-04-28 13:25:41" datetime="2018-04-28T05:25:41.000Z"  itemprop="datePublished">2018-04-28</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        <h2 id="Hibernate-小结"><a href="#Hibernate-小结" class="headerlink" title="Hibernate 小结"></a>Hibernate 小结</h2><p>Hibernate是一个开放源码的对象关系映射框架,他对JDBC进行了轻量级的对象封装它将实体类和数据库建立映射关系,是一个全自动的ORM框架,是java持久层框架之一</p>
-    
-        <div>
-            <a href="/posts/25672/" class="post-more waves-button">
-                続きを読む…
-            </a>
-        </div>
-    </div>
-    
-    <div class="post-footer">
-        
+      
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssh/">ssh</a></li></ul>
 
     </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-poem"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/posts/24768/">从前慢</a>
-    </h3>
-  
-
-
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2018-04-28 13:06:24" datetime="2018-04-28T05:06:24.000Z"  itemprop="datePublished">2018-04-28</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        <p>记得早先少年时</p>
-<p>大家诚诚恳恳</p>
-<p>说一句 是一句</p>
-<p>清早上火车站</p>
-    
-        <div>
-            <a href="/posts/24768/" class="post-more waves-button">
-                続きを読む…
-            </a>
+  </article>
+            
         </div>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/poem/">poem</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-    </ul>
-
     
 
 </div>
+
 
         <footer class="footer">
     <div class="footer-content">
