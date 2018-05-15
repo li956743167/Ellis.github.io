@@ -47,7 +47,7 @@
 <meta property="og:site_name" content="Ellis">
 <meta property="og:description" content="生命在于折腾">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-15T13:47:06.387Z">
+<meta property="og:updated_time" content="2018-05-15T13:48:34.384Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mybatis">
 <meta name="twitter:description" content="生命在于折腾">
@@ -191,6 +191,13 @@
 
 <div class="container body-wrap">
     
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Mybatis介绍"><span class="post-toc-number">1.</span> <span class="post-toc-text">Mybatis介绍</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Mybatis解决jdbc编程的问题"><span class="post-toc-number">2.</span> <span class="post-toc-text">Mybatis解决jdbc编程的问题</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#SqlMapConfig-xml"><span class="post-toc-number">3.</span> <span class="post-toc-text">SqlMapConfig.xml</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Mapper-xml"><span class="post-toc-number">4.</span> <span class="post-toc-text">Mapper.xml</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#小结"><span class="post-toc-number">5.</span> <span class="post-toc-text">小结</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#和-的使用"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">${}和#{}的使用</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#parameterType和resultType"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">parameterType和resultType</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#selectOne和selectList"><span class="post-toc-number">5.3.</span> <span class="post-toc-text">selectOne和selectList</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Mysql自增主键返回"><span class="post-toc-number">6.</span> <span class="post-toc-text">Mysql自增主键返回</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#SqlSession的使用范围"><span class="post-toc-number">7.</span> <span class="post-toc-text">SqlSession的使用范围</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Mapper动态代理方式"><span class="post-toc-number">8.</span> <span class="post-toc-text">Mapper动态代理方式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Mapper接口开发需要遵循以下规范："><span class="post-toc-number">8.1.</span> <span class="post-toc-text">Mapper接口开发需要遵循以下规范：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Mapper-xml-映射文件-的配置"><span class="post-toc-number">8.2.</span> <span class="post-toc-text">Mapper.xml(映射文件)的配置</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#SqlMapConfig-xml配置文件的其他配置"><span class="post-toc-number">9.</span> <span class="post-toc-text">SqlMapConfig.xml配置文件的其他配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#properties（属性）"><span class="post-toc-number">9.1.</span> <span class="post-toc-text">properties（属性）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#typeAliases（类型别名）"><span class="post-toc-number">9.2.</span> <span class="post-toc-text">typeAliases（类型别名）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#mappers（映射器）"><span class="post-toc-number">9.3.</span> <span class="post-toc-text">mappers（映射器）</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#动态sql"><span class="post-toc-number">10.</span> <span class="post-toc-text">动态sql</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#举例"><span class="post-toc-number">10.0.1.</span> <span class="post-toc-text">举例:</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#if标签的使用"><span class="post-toc-number">10.1.</span> <span class="post-toc-text">if标签的使用</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#where标签的使用"><span class="post-toc-number">10.2.</span> <span class="post-toc-text">where标签的使用</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#sql片段"><span class="post-toc-number">10.3.</span> <span class="post-toc-text">sql片段</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+   
 <article id="post-Mybatis"
   class="post-article article-type-post fade" itemprop="blogPost">
 
@@ -217,18 +224,131 @@
         </div>
         <div class="post-count-custom">
             <i class="icon icon-lg icon-comment-o"></i>
-            阅读本文可能花费您&nbsp;<span class="post-count">1</span>&nbsp;分钟
+            阅读本文可能花费您&nbsp;<span class="post-count">9</span>&nbsp;分钟
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>weqweqweqwe</p>
-
+            <h2 id="Mybatis介绍"><a href="#Mybatis介绍" class="headerlink" title="Mybatis介绍"></a>Mybatis介绍</h2><ul>
+<li><p>MyBatis是一个优秀的持久层框架，它对jdbc的操作数据库的过程进行封装，使开发者只需要关注 SQL 本身，而不需要花费精力去处理例如注册驱动、创建connection、创建statement、手动设置参数、结果集检索等jdbc繁杂的过程代码</p>
+</li>
+<li><p>Mybatis通过xml或注解的方式将要执行的各种statement（statement、preparedStatemnt、CallableStatement）配置起来，并通过java对象和statement中的sql进行映射生成最终执行的sql语句，最后由mybatis框架执行sql并将结果映射成java对象并返回</p>
+</li>
+</ul>
+<h2 id="Mybatis解决jdbc编程的问题"><a href="#Mybatis解决jdbc编程的问题" class="headerlink" title="Mybatis解决jdbc编程的问题"></a>Mybatis解决jdbc编程的问题</h2><a id="more"></a>
+<ul>
+<li>数据库连接创建、释放频繁造成系统资源浪费，从而影响系统性能。如果使用数据库连接池可解决此问题。</li>
+</ul>
+<blockquote>
+<p>解决：在SqlMapConfig.xml中配置数据连接池，使用连接池管理数据库链接。</p>
+</blockquote>
+<ul>
+<li>Sql语句在代码中硬编码，造成代码不易维护，实际应用中sql变化的可能较大，sql变动需要改变java代码。        </li>
+</ul>
+<blockquote>
+<p>解决：将Sql语句配置在XXXmapper.xml文件中与java代码分离。</p>
+</blockquote>
+<ul>
+<li>使用preparedStatement向占有位符号传参数存在硬编码，因为sql语句的where条件不一定，可能多也可能少，修改sql还要修改代码，系统不易维护。</li>
+</ul>
+<blockquote>
+<p>解决：Mybatis自动将java对象映射至sql语句，通过statement中的parameterType定义输入参数的类型。</p>
+</blockquote>
+<ul>
+<li>对结果集解析存在硬编码（查询列名），sql变化导致解析代码变化，系统不易维护，如果能将数据库记录封装成pojo对象解析比较方便。</li>
+</ul>
+<blockquote>
+<p>解决：Mybatis自动将sql执行结果映射至java对象，通过statement中的resultType定义输出结果的类型。’</p>
+</blockquote>
+<h2 id="SqlMapConfig-xml"><a href="#SqlMapConfig-xml" class="headerlink" title="SqlMapConfig.xml"></a>SqlMapConfig.xml</h2><p>—–&gt; Mybatis核心配置文件配置</p>
+<p>头文件:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE configuration</span></span><br><span class="line"><span class="meta">PUBLIC "-//mybatis.org//DTD Config 3.0//EN"		</span></span><br><span class="line"><span class="meta">"http://mybatis.org/dtd/mybatis-3-config.dtd"&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Mapper-xml"><a href="#Mapper-xml" class="headerlink" title="Mapper.xml"></a>Mapper.xml</h2><p>—–&gt; sql映射文件的配置</p>
+<p>头文件:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE mapper</span></span><br><span class="line"><span class="meta">PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"</span></span><br><span class="line"><span class="meta">"http://mybatis.org/dtd/mybatis-3-mapper.dtd"&gt;</span></span><br></pre></td></tr></table></figure>
+<p>映射配置:<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- namespace：命名空间，用于隔离sql --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">"user"</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- id:statement的id 或者叫做sql的id--&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- parameterType:声明输入参数的类型 --&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- resultType:声明输出结果的类型，应该填写pojo的全路径 --&gt;</span></span><br><span class="line">	!-- #&#123;&#125;：输入参数的占位符，相当于jdbc的？ --&gt;</span><br><span class="line">	<span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"queryUserById"</span> <span class="attr">parameterType</span>=<span class="string">"int"</span></span></span><br><span class="line"><span class="tag">		<span class="attr">resultType</span>=<span class="string">"cn.itcast.mybatis.pojo.User"</span>&gt;</span></span><br><span class="line">		SELECT * FROM `user` WHERE id  = #&#123;id&#125;</span><br><span class="line">	<span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- 如果传入的参数是简单数据类型，$&#123;&#125;里面必须写value --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"queryUserByUsername2"</span> <span class="attr">parameterType</span>=<span class="string">"string"</span></span></span><br><span class="line"><span class="tag">		<span class="attr">resultType</span>=<span class="string">"cn.itcast.mybatis.pojo.User"</span>&gt;</span></span><br><span class="line">		SELECT * FROM `user` WHERE username LIKE '%$&#123;value&#125;%'</span><br><span class="line">	<span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><h3 id="和-的使用"><a href="#和-的使用" class="headerlink" title="${}和#{}的使用"></a>${}和#{}的使用</h3><ol>
+<li><p>#{}表示一个占位符号，通过#{}可以实现preparedStatement向占位符中设置值,自动进行java类型和jdbc类型转换。#{}可以有效防止sql注入。#{}可以接收简单类型值或pojo属性值。 如果parameterType传输单个简单类型值，#{}括号中可以是value或其它名称。</p>
+</li>
+<li><p>${}表示拼接sql串，通过${}可以将parameterType 传入的内容拼接在sql中且不进行jdbc类型转换， ${}可以接收简单类型值或pojo属性值，如果parameterType传输单个简单类型值，${}括号中只能是value。值得注意的是 该方式不能有效的防止sql注入</p>
+</li>
+</ol>
+<h3 id="parameterType和resultType"><a href="#parameterType和resultType" class="headerlink" title="parameterType和resultType"></a>parameterType和resultType</h3><ol>
+<li><p>parameterType：指定输入参数类型，mybatis通过ognl从输入对象中获取参数值拼接在sql中。</p>
+</li>
+<li><p>resultType：指定输出结果类型，mybatis将sql查询结果的一行记录数据映射为resultType指定类型的对象。如果有多条数据，则分别进行映射，并把对象放到容器List中</p>
+</li>
+</ol>
+<h3 id="selectOne和selectList"><a href="#selectOne和selectList" class="headerlink" title="selectOne和selectList"></a>selectOne和selectList</h3><ol>
+<li>selectOne查询一条记录，如果使用selectOne查询多条记录则抛出异常</li>
+</ol>
+<blockquote>
+<p>org.apache.ibatis.exceptions.TooManyResultsException</p>
+</blockquote>
+<ol>
+<li>selectList可以查询一条或多条记录。</li>
+</ol>
+<h2 id="Mysql自增主键返回"><a href="#Mysql自增主键返回" class="headerlink" title="Mysql自增主键返回"></a>Mysql自增主键返回</h2><ul>
+<li>在新增记录的时候在sql语句之前配置主键自增</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- order：设置在执行insert语句前执行查询id的sql，还指在执行insert语句之后执行查询id的sql --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- resultType：设置返回的id的类型 --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">selectKey</span> <span class="attr">keyColumn</span>=<span class="string">"id"</span> <span class="attr">keyProperty</span>=<span class="string">"id"</span> <span class="attr">order</span>=<span class="string">"AFTER"</span></span></span><br><span class="line"><span class="tag">	<span class="attr">resultType</span>=<span class="string">"int"</span>&gt;</span></span><br><span class="line">	SELECT LAST_INSERT_ID()</span><br><span class="line"><span class="tag">&lt;/<span class="name">selectKey</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>uuid实现主键</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">selectKey</span> <span class="attr">keyColumn</span>=<span class="string">"id"</span> <span class="attr">keyProperty</span>=<span class="string">"id"</span> <span class="attr">order</span>=<span class="string">"BEFORE"</span> <span class="attr">resultType</span>=<span class="string">"string"</span>&gt;</span></span><br><span class="line">	SELECT LAST_INSERT_ID()</span><br><span class="line"><span class="tag">&lt;/<span class="name">selectKey</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="SqlSession的使用范围"><a href="#SqlSession的使用范围" class="headerlink" title="SqlSession的使用范围"></a>SqlSession的使用范围</h2><p>了解SqlSession的使用范围,首先要明白他是怎么创建的</p>
+<pre><code>SqlSession中封装了对数据库的操作，如：查询、插入、更新、删除等。
+SqlSession通过SqlSessionFactory创建。
+SqlSessionFactory是通过SqlSessionFactoryBuilder进行创建。
+</code></pre><p>1.SqlSessionFactoryBuilder</p>
+<pre><code>SqlSessionFactoryBuilder用于创建SqlSessionFacoty，
+SqlSessionFacoty一旦创建完成就不需要SqlSessionFactoryBuilder了，
+因为SqlSession是通过SqlSessionFactory创建的。
+所以可以将SqlSessionFactoryBuilder当成一个工具类使用，
+最佳使用范围是方法范围即方法体内局部变量。
+</code></pre><p>2.SqlSessionFactory</p>
+<pre><code>SqlSessionFactory是一个接口，接口中定义了openSession的不同重载方法，
+SqlSessionFactory的最佳使用范围是整个应用运行期间，一旦创建后可以重复使用，
+通常以单例模式管理SqlSessionFactory。
+</code></pre><p>3.SqlSession</p>
+<pre><code>SqlSession是一个面向用户的接口，sqlSession中定义了数据库操作方法。
+每个线程都应该有它自己的SqlSession实例。
+SqlSession的实例不能共享使用，它也是线程不安全的。
+因此最佳的范围是请求或方法范围。
+绝对不能将SqlSession实例的引用放在一个类的静态字段或实例字段中。
+打开一个 SqlSession；使用完毕就要关闭它。
+</code></pre><h2 id="Mapper动态代理方式"><a href="#Mapper动态代理方式" class="headerlink" title="Mapper动态代理方式"></a>Mapper动态代理方式</h2><pre><code>Mapper接口开发方法只需要程序员编写Mapper接口（相当于Dao接口），由Mybatis框架根据接口定义创建接口的动态代理对象，代理对象的方法体同上边Dao接口实现类方法。
+</code></pre><h3 id="Mapper接口开发需要遵循以下规范："><a href="#Mapper接口开发需要遵循以下规范：" class="headerlink" title="Mapper接口开发需要遵循以下规范："></a>Mapper接口开发需要遵循以下规范：</h3><pre><code>Mapper.xml文件中的namespace与mapper接口的类路径相同。
+Mapper接口方法名和Mapper.xml中定义的每个statement的id相同 
+Mapper接口方法的输入参数类型和mapper.xml中定义的每个sql 的parameterType的类型相同
+Mapper接口方法的输出参数类型和mapper.xml中定义的每个sql的resultType的类型相同
+</code></pre><h3 id="Mapper-xml-映射文件-的配置"><a href="#Mapper-xml-映射文件-的配置" class="headerlink" title="Mapper.xml(映射文件)的配置"></a>Mapper.xml(映射文件)的配置</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">"Mapper接口类路径"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"Mapper接口方法名"</span> <span class="attr">parameterType</span>=<span class="string">"接口方法参数类型"</span> <span class="attr">resultType</span>=<span class="string">"接口方法返回值类型"</span>&gt;</span></span><br><span class="line">		select * from user where id = #&#123;id&#125;</span><br><span class="line">	<span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>注意:要在Mabits核心配置文件中配置加载映射文件(Mapper.xml)</p>
+<h2 id="SqlMapConfig-xml配置文件的其他配置"><a href="#SqlMapConfig-xml配置文件的其他配置" class="headerlink" title="SqlMapConfig.xml配置文件的其他配置"></a>SqlMapConfig.xml配置文件的其他配置</h2><h3 id="properties（属性）"><a href="#properties（属性）" class="headerlink" title="properties（属性）"></a>properties（属性）</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 使用resource属性加载外部配置文件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">properties</span> <span class="attr">resource</span>=<span class="string">"db.properties"</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- 在properties内部用property定义属性 --&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- 如果外部配置文件有该属性，则内部定义属性被外部属性覆盖 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"jdbc.username"</span> <span class="attr">value</span>=<span class="string">"root123"</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"jdbc.password"</span> <span class="attr">value</span>=<span class="string">"root123"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="typeAliases（类型别名）"><a href="#typeAliases（类型别名）" class="headerlink" title="typeAliases（类型别名）"></a>typeAliases（类型别名）</h3><p>在Mybatis中有一些默认的别名,例如返回值类型的配置的时候,直接写类型名即可,不需要写类型的全限定名,这就是因为在Mybatis中已经配置好了一些默认的类型别名,直接使用即可,除此之外,还可以自定义类型别名:</p>
+<p>在SqlMapConfig.xml中配置如下：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">typeAliases</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- 单个别名定义 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">typeAlias</span> <span class="attr">alias</span>=<span class="string">"user"</span> <span class="attr">type</span>=<span class="string">"User类的全限定名"</span> /&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- 批量别名定义，扫描整个包下的类，别名为类名（大小写不敏感） --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">"包扫描路径"</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">"其它包"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">typeAliases</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>需要注意的是,别名的大小写不敏感</p>
+<h3 id="mappers（映射器）"><a href="#mappers（映射器）" class="headerlink" title="mappers（映射器）"></a>mappers（映射器）</h3><p>Mapper配置的几种方法：</p>
+<p>方式一:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">resource</span>=<span class="string">" "</span> /&gt;</span></span><br><span class="line"><span class="comment">&lt;!--使用相对于类路径的资源--&gt;</span></span><br></pre></td></tr></table></figure>
+<p>方式二:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">class</span>=<span class="string">" "</span> /&gt;</span></span><br><span class="line"><span class="comment">&lt;!--使用mapper接口类路径--&gt;</span></span><br></pre></td></tr></table></figure>
+<p>方式三:<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">""</span>/&gt;</span></span><br><span class="line"><span class="comment">&lt;!--注册指定包下的所有mapper接口--&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>注意:<br>    使用方法二三时,要求mapper接口名称和mapper映射文件名称相同，且放在同一个目录中</p>
+<h2 id="动态sql"><a href="#动态sql" class="headerlink" title="动态sql"></a>动态sql</h2><p>通过mybatis提供的各种标签方法实现动态拼接sql</p>
+<h4 id="举例"><a href="#举例" class="headerlink" title="举例:"></a>举例:</h4><p>需求是:根据姓名和性别查询用户,有可能是姓名性别都没选中,有可能只有一个姓名或只有一个性别,或两个条件都有</p>
+<h3 id="if标签的使用"><a href="#if标签的使用" class="headerlink" title="if标签的使用"></a>if标签的使用</h3><p>通过使用if标签可以实现判断各种查询情景</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"queryUserByWhere"</span> <span class="attr">parameterType</span>=<span class="string">"user"</span> <span class="attr">resultType</span>=<span class="string">"user"</span>&gt;</span></span><br><span class="line">	SELECT id, username, birthday, sex, address FROM `user`</span><br><span class="line">	WHERE 1=1</span><br><span class="line">	<span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">"sex != null and sex != ''"</span>&gt;</span></span><br><span class="line">		AND sex = #&#123;sex&#125;</span><br><span class="line">	<span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">"username != null and username != ''"</span>&gt;</span></span><br><span class="line">		AND username LIKE '%$&#123;username&#125;%'</span><br><span class="line">	<span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="where标签的使用"><a href="#where标签的使用" class="headerlink" title="where标签的使用"></a>where标签的使用</h3><p>通过where标签可以对上面代码进行改造,将不用再写where和1=1的条件</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"queryUserByWhere"</span> <span class="attr">parameterType</span>=<span class="string">"user"</span> <span class="attr">resultType</span>=<span class="string">"user"</span>&gt;</span></span><br><span class="line">	SELECT id, username, birthday, sex, address FROM `user`</span><br><span class="line"><span class="comment">&lt;!-- where标签可以自动添加where，同时处理sql语句中第一个and关键字 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">where</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">"sex != null"</span>&gt;</span></span><br><span class="line">			AND sex = #&#123;sex&#125;</span><br><span class="line">		<span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">"username != null and username != ''"</span>&gt;</span></span><br><span class="line">			AND username LIKE '%$&#123;username&#125;%'</span><br><span class="line">		<span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">where</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="sql片段"><a href="#sql片段" class="headerlink" title="sql片段"></a>sql片段</h3><p>通过sql标签可以实现将重复性的条件提取出来直接在sql中引入即可(include)</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 声明sql片段 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">"userFields"</span>&gt;</span></span><br><span class="line">	id, username, birthday, sex, address</span><br><span class="line"><span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line">SELECT <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">"userFields"</span> /&gt;</span> FROM `user`</span><br></pre></td></tr></table></figure>
         </div>
 
         <blockquote class="post-copyright">
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2018-05-15T13:47:06.387Z" itemprop="dateUpdated">2018-05-15 21:47:06</time>
+    Last updated: <time datetime="2018-05-15T13:48:34.384Z" itemprop="dateUpdated">2018-05-15 21:48:34</time>
 </span>
 
 
@@ -275,7 +395,8 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://ellisl.club/posts/13919/&title=《Mybatis》 — Ellis&source=Ellis" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://ellisl.club/posts/13919/&title=《Mybatis》 — Ellis&source=Mybatis介绍
+MyBatis是一个优秀的持久层框架，它对jdbc的操作数据库的过程进行封装，使开发者只需要关注 SQL 本身，而不需要花费精力去处理..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -425,7 +546,8 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://ellisl.club/posts/13919/&title=《Mybatis》 — Ellis&source=Ellis" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://ellisl.club/posts/13919/&title=《Mybatis》 — Ellis&source=Mybatis介绍
+MyBatis是一个优秀的持久层框架，它对jdbc的操作数据库的过程进行封装，使开发者只需要关注 SQL 本身，而不需要花费精力去处理..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
