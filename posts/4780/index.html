@@ -6,13 +6,13 @@
     
     
     
-    <title>Ellis | 一个萌萌哒小码农</title>
+    <title>SpringMVC | Ellis | 一个萌萌哒小码农</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#77AAFF">
     
     
-    <meta name="keywords" content="">
+    <meta name="keywords" content="SSM">
     
     
 
@@ -39,16 +39,20 @@
 
 
     
-    <meta name="description" content="Ellis">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ellis">
-<meta property="og:url" content="http://ellisl.club/index.html">
+    <meta name="description" content="生命在于折腾">
+<meta name="keywords" content="SSM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SpringMVC">
+<meta property="og:url" content="http://ellisl.club/posts/4780/index.html">
 <meta property="og:site_name" content="Ellis">
-<meta property="og:description" content="Ellis">
+<meta property="og:description" content="生命在于折腾">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://ellisl.club/img/SpringMVC架构.png">
+<meta property="og:updated_time" content="2018-05-16T08:31:09.879Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ellis">
-<meta name="twitter:description" content="Ellis">
+<meta name="twitter:title" content="SpringMVC">
+<meta name="twitter:description" content="生命在于折腾">
+<meta name="twitter:image" content="http://ellisl.club/img/SpringMVC架构.png">
     
         <link rel="alternate" type="application/atom+xml" title="Ellis" href="/atom.xml">
     
@@ -65,7 +69,7 @@
 
 <body>
     <div id="loading" class="active"></div>
-    <aside id="menu"   >
+    <aside id="menu"  class="hide" >
   <div class="inner flex-row-vertical">
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
@@ -86,7 +90,7 @@
     <div class="scroll-wrap flex-col">
       <ul class="nav">
         
-              <li class="waves-block waves-effect active">
+              <li class="waves-block waves-effect">
                   <a href="/"  >
                     <i class="icon icon-lg icon-home"></i>
                     <span>主 页</span><i class="icon icon-lg icon-caret-left"></i>
@@ -152,7 +156,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Ellis</div>
+        <div class="flex-col header-title ellipsis">SpringMVC</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -169,19 +173,16 @@
         </a>
     </div>
 </header>
-<header class="content-header index-header">
+<header class="content-header post-header">
     
     
     <div class="container fade-scale">
         <div id="myheader">
             <h1 class="title">
-                 
-                    Ellis
                 
             </h1>
             <h5 class="subtitle">
                 
-                    在Web全栈的道路上努力前行
                 
             </h5>
         </div>
@@ -189,34 +190,46 @@
 
 </header>
 
+
 <div class="container body-wrap">
-    <ul class="post-list">
     
-        <li class="post-list-item fade">
-            <article id="post-SpringMVC"
-  class="article-card article-type-post" itemprop="blogPost">
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#SpringMVC入门"><span class="post-toc-number">1.</span> <span class="post-toc-text">SpringMVC入门</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Spring-MVC概述："><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Spring MVC概述：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Spring的处理流程原理"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Spring的处理流程原理</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#框架流程"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">框架流程</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#SpringMVC组件说明"><span class="post-toc-number">2.</span> <span class="post-toc-text">SpringMVC组件说明</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#DispatcherServlet-前端控制器"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">DispatcherServlet: 前端控制器</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#HandlerMapping：处理器映射器"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">HandlerMapping：处理器映射器</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#HandlAdapter：处理器适配器"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">HandlAdapter：处理器适配器</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#ViewResolver：视图解析器"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">ViewResolver：视图解析器</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Handler：处理器"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">Handler：处理器</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#View：视图"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">View：视图</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#配置文件的配置"><span class="post-toc-number">3.</span> <span class="post-toc-text">配置文件的配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#配置controller扫描包"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">配置controller扫描包</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#注解映射器和适配器"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">注解映射器和适配器</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#配置处理器映射器"><span class="post-toc-number">3.2.1.</span> <span class="post-toc-text">配置处理器映射器</span></a></li></ol></li></ol></li></ol>
+        </nav>
+    </aside>
+   
+<article id="post-SpringMVC"
+  class="post-article article-type-post fade" itemprop="blogPost">
 
-    
+    <div class="post-card">
+        <h1 class="post-card-title">SpringMVC</h1>
+        <div class="post-meta">
+            <i class="icon icon-lg icon-calendar-o"></i>
+            发表于
+            <time class="post-time" title="2018-05-16 15:28:31" datetime="2018-05-16T07:28:31.000Z"  itemprop="datePublished">2018-05-16</time>
+
+            <br id="mybreak"/>
+            
+	<i class="icon icon-lg icon-folder-o"></i>
+	分类：<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/SSM框架/">SSM框架</a></li></ul>
 
 
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/posts/4780/">SpringMVC</a>
-    </h3>
-  
+            <i>·</i>
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>次浏览
+</span>
 
 
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2018-05-16 15:28:31" datetime="2018-05-16T07:28:31.000Z"  itemprop="datePublished">2018-05-16</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        <h2 id="SpringMVC入门"><a href="#SpringMVC入门" class="headerlink" title="SpringMVC入门"></a>SpringMVC入门</h2><h3 id="Spring-MVC概述："><a href="#Spring-MVC概述：" class="headerlink" title="Spring MVC概述："></a>Spring MVC概述：</h3><p>Spring MVC是Spring提供的一个强大而灵活的web框架。借助于注解，Spring MVC提供了几乎是POJO的开发模式，使得控制器的开发和测试更加简单。这些控制器一般不直接处理请求，而是将其委托给Spring上下文中的其他bean，通过Spring的依赖注入功能，这些bean被注入到控制器中。</p>
+        </div>
+        <div class="post-count-custom">
+            <i class="icon icon-lg icon-comment-o"></i>
+            阅读本文可能花费您&nbsp;<span class="post-count">4</span>&nbsp;分钟
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="SpringMVC入门"><a href="#SpringMVC入门" class="headerlink" title="SpringMVC入门"></a>SpringMVC入门</h2><h3 id="Spring-MVC概述："><a href="#Spring-MVC概述：" class="headerlink" title="Spring MVC概述："></a>Spring MVC概述：</h3><p>Spring MVC是Spring提供的一个强大而灵活的web框架。借助于注解，Spring MVC提供了几乎是POJO的开发模式，使得控制器的开发和测试更加简单。这些控制器一般不直接处理请求，而是将其委托给Spring上下文中的其他bean，通过Spring的依赖注入功能，这些bean被注入到控制器中。</p>
 <p>Spring MVC主要由DispatcherServlet、处理器映射、处理器(控制器)、视图解析器、视图组成。他的两个核心是：</p>
 <p><strong>处理器映射</strong>：选择使用哪个控制器来处理请求 </p>
 <p><strong>视图解析器</strong>：选择结果应该如何渲染</p>
@@ -284,170 +297,117 @@ View Resolver首先根据逻辑视图名解析成物理视图名
 </code></pre><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 配置处理器映射器 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span></span></span><br><span class="line"><span class="tag">	<span class="attr">class</span>=<span class="string">"org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
 <p>@RequestMapping:定义请求url到处理器功能方法的映射</p>
 
-    
-        <div>
-            <a href="/posts/4780/" class="post-more waves-button">
-                Continue reading...
-            </a>
         </div>
-    </div>
-    
-    <div class="post-footer">
+
+        <blockquote class="post-copyright">
+    <div class="content">
         
+<span class="post-time">
+    Last updated: <time datetime="2018-05-16T08:31:09.879Z" itemprop="dateUpdated">2018-05-16 16:31:09</time>
+</span>
+
+
+        
+        原文链接：<a href="/posts/4780/" target="_blank" rel="external">http://ellisl.club/posts/4780/</a>
+        
+    </div>
+    <footer>
+        <div onclick="location.href='http://ellisl.club'">
+            <img src="/img/head.jpg" alt="E l l i s">
+            <a>E l l i s</a>
+        </div>
+    </footer>
+</blockquote>
+
+        
+    <div class="page-reward">
+        <nav class="myreward">
+            <a id="rewardBtn" href="javascript:;"><span>打&nbsp;赏</span><span>装成好像很多人打赏的样子</span></a>
+        </nav>
+    </div>
+
+
+
+        <div class="post-footer">
+            
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SSM/">SSM</a></li></ul>
 
-    </div>
-    
-</article>
 
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-Mybatis"
-  class="article-card article-type-post" itemprop="blogPost">
-
+            
+<div class="page-share-wrap">
     
 
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/posts/13919/">Mybatis</a>
-    </h3>
-  
-
-
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2018-05-15 19:50:48" datetime="2018-05-15T11:50:48.000Z"  itemprop="datePublished">2018-05-15</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        <h2 id="Mybatis介绍"><a href="#Mybatis介绍" class="headerlink" title="Mybatis介绍"></a>Mybatis介绍</h2><ul>
-<li><p>MyBatis是一个优秀的持久层框架，它对jdbc的操作数据库的过程进行封装，使开发者只需要关注 SQL 本身，而不需要花费精力去处理例如注册驱动、创建connection、创建statement、手动设置参数、结果集检索等jdbc繁杂的过程代码</p>
-</li>
-<li><p>Mybatis通过xml或注解的方式将要执行的各种statement（statement、preparedStatemnt、CallableStatement）配置起来，并通过java对象和statement中的sql进行映射生成最终执行的sql语句，最后由mybatis框架执行sql并将结果映射成java对象并返回</p>
-</li>
-</ul>
-<h2 id="Mybatis解决jdbc编程的问题"><a href="#Mybatis解决jdbc编程的问题" class="headerlink" title="Mybatis解决jdbc编程的问题"></a>Mybatis解决jdbc编程的问题</h2>
-    
-        <div>
-            <a href="/posts/13919/" class="post-more waves-button">
-                Continue reading...
-            </a>
-        </div>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SSM/">SSM</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-HibernateNote"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/posts/25673/">Hibernate</a>
-    </h3>
-  
-
-
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2018-04-28 13:25:41" datetime="2018-04-28T05:25:41.000Z"  itemprop="datePublished">2018-04-28</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        <h2 id="Hibernate-小结"><a href="#Hibernate-小结" class="headerlink" title="Hibernate 小结"></a>Hibernate 小结</h2><h3 id="Hibernate简介"><a href="#Hibernate简介" class="headerlink" title="Hibernate简介:"></a>Hibernate简介:</h3><p>Hibernate是一个开放源码的对象关系映射框架,他对JDBC进行了轻量级的对象封装它将实体类和数据库建立映射关系,是一个全自动的ORM框架,是java持久层框架之一</p>
-<h3 id="Hibernate的优势"><a href="#Hibernate的优势" class="headerlink" title="Hibernate的优势:"></a>Hibernate的优势:</h3><p>1.对JDBC进行了轻量级的对象封装,简化了DAO层繁琐的重复性代码,减少了内存消耗,加快了运行效率</p>
-<p>2.Hibernate是一个基于JDBC的主流持久化框架，是一个优秀的ORM实现，简化了DAO层编码工作</p>
-    
-        <div>
-            <a href="/posts/25673/" class="post-more waves-button">
-                Continue reading...
-            </a>
-        </div>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssh/">ssh</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-poem"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/posts/24768/">从前慢</a>
-    </h3>
-  
-
-
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2018-04-28 13:06:24" datetime="2018-04-28T05:06:24.000Z"  itemprop="datePublished">2018-04-28</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        <h2 id="从前慢"><a href="#从前慢" class="headerlink" title="从前慢"></a>从前慢</h2><p> <br></p>
-<p> </p><p align="center">记得早先少年时 </p>
-<p> </p><p align="center">大家诚诚恳恳 </p>
-<p> </p><p align="center">说一句 是一句 </p>
-<p> </p><p align="center">清早上火车站 </p>
-<p> </p><p align="center">长街黑暗无行人 </p>
-<p> </p><p align="center">卖豆浆的小店冒着热气 </p>
-    
-        <div>
-            <a href="/posts/24768/" class="post-more waves-button">
-                Continue reading...
-            </a>
-        </div>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/poem/">poem</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://ellisl.club/posts/4780/&title=《SpringMVC》 — Ellis&pic=http://ellisl.club/img/head.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://ellisl.club/posts/4780/&title=《SpringMVC》 — Ellis&source=Ellis" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://ellisl.club/posts/4780/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《SpringMVC》 — Ellis&url=http://ellisl.club/posts/4780/&via=http://ellisl.club" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://ellisl.club/posts/4780/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
     </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
 
     
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/posts/13919/" id="post-next" class="post-nav-link">
+        <h4 class="title" data-hover="下一篇：Mybatis">下一篇：Mybatis</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+    
+
+    
+
+    
+
+
+</article>
 
 </div>
 
@@ -493,8 +453,83 @@ View Resolver首先根据逻辑视图名解析成物理视图名
 
     </main>
     
+        
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        <span>感谢您的鼓励支持！</span>
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" data-img="/img/dog.png" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.png" data-alipay="/img/alipay.png">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechatPay">&nbsp;&nbsp;微信&nbsp;&nbsp;</span>
+                <span class="reward-toggle-item alipayPay">支付宝</span>
+            </div>
+        </label>
+        
+        <i class="icon icon-caret-up"></i>
+    </div>
+</div>
+
+
+    
     <div class="mask" id="mask"></div>
 <a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://ellisl.club/posts/4780/&title=《SpringMVC》 — Ellis&pic=http://ellisl.club/img/head.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://ellisl.club/posts/4780/&title=《SpringMVC》 — Ellis&source=Ellis" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://ellisl.club/posts/4780/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《SpringMVC》 — Ellis&url=http://ellisl.club/posts/4780/&via=http://ellisl.club" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://ellisl.club/posts/4780/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p class="wechatshare">扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABw0lEQVR42u3aORKDMBBEUd//0nJKAKJ7NtlVX5HLxuhBMDWLPh95rcu6fqNfuf+meMGFCzfNXdul49ztnx7g5Z5w4cId5Jbd7uG/+WvgwoX7y9x9QuP+Chcu3H/nKgFuH/hipRRcuHBPcfUN9pvpyVB7rQYXLtxstWK3MGo/t/R34cKFG+Ku0FISkXyr5WZfuHDhjnDzRU4MrRdON/eBCxduM1dJMtyHUXKS2KENuHDhTnKVtkWmgaI8knRgCy5cuINcN6DEGqkFTRa4cOGOcLsTmkzolNqpcOHCbebGgk6sFaIf4TLSHbhw4RZx3TinhDB9NqpXNHDhwp3kuk2QWPgzEPqrhAsXbhs3PzR1W676wPXxjcKFC3eQ6x6GiBVCbkvlZcgKFy7cBq475nRHL+5Ixu7fwIULt4HrDjz0I5huSiSNVeDChTvCdcNT1ZA1VQjBhQu3mbvM5TY6izMTuHDhjnD1VTtWSdVqcOHCHeG6bVMlzNU2UODChXuKqweaTBoUO/71UqvBhQv3KDfWQnWPWdhdHLhw4R7l5h9POYqRGrXChQu3lOsWP0pJ0zKChQsX7gi3Y0CSuac7vIELF24p9wtveVeuGm6evAAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
 
 
     <!-- waves按钮特效 -->
@@ -502,7 +537,7 @@ View Resolver首先根据逻辑视图名解析成物理视图名
 
 <!-- 主题配置脚本 -->
 <script>
-var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
 </script>
 
 <!-- jquery -->
