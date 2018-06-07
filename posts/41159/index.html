@@ -6,13 +6,13 @@
     
     
     
-    <title>从前慢 | 文强的博客</title>
+    <title>Dubbo分布式服务框架 | 文强的博客</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#77AAFF">
     
     
-    <meta name="keywords" content="poem">
+    <meta name="keywords" content="分布式">
     
     
 
@@ -40,17 +40,21 @@
 
     
     <meta name="description" content="生命在于折腾">
-<meta name="keywords" content="poem">
+<meta name="keywords" content="分布式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="从前慢">
-<meta property="og:url" content="http://ellisl.club/posts/24768/index.html">
+<meta property="og:title" content="Dubbo分布式服务框架">
+<meta property="og:url" content="http://ellisl.club/posts/41159/index.html">
 <meta property="og:site_name" content="文强的博客">
 <meta property="og:description" content="生命在于折腾">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-04T10:10:11.731Z">
+<meta property="og:image" content="http://ellisl.club/img/dubbo-architecture.png">
+<meta property="og:image" content="http://ellisl.club/img/架构解释.JPG">
+<meta property="og:image" content="http://ellisl.club/img/dubbo原理举例.png">
+<meta property="og:updated_time" content="2018-06-07T04:53:38.753Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="从前慢">
+<meta name="twitter:title" content="Dubbo分布式服务框架">
 <meta name="twitter:description" content="生命在于折腾">
+<meta name="twitter:image" content="http://ellisl.club/img/dubbo-architecture.png">
     
         <link rel="alternate" type="application/atom+xml" title="文强的博客" href="/atom.xml">
     
@@ -154,13 +158,13 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">从前慢</div>
+        <div class="flex-col header-title ellipsis">Dubbo分布式服务框架</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Búsqueda">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -194,24 +198,24 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#从前慢"><span class="post-toc-number">1.</span> <span class="post-toc-text">从前慢</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#基本概念"><span class="post-toc-number">1.</span> <span class="post-toc-text">基本概念</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Dubbo架构"><span class="post-toc-number">2.</span> <span class="post-toc-text">Dubbo架构</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#节点角色说明"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">节点角色说明</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#调用关系说明"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">调用关系说明</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#关于Dubbo架构的案例举例"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">关于Dubbo架构的案例举例</span></a></li></ol></li></ol>
         </nav>
     </aside>
    
-<article id="post-poem"
+<article id="post-Dubbo"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">从前慢</h1>
+        <h1 class="post-card-title">Dubbo分布式服务框架</h1>
         <div class="post-meta">
             <i class="icon icon-lg icon-calendar-o"></i>
             发表于
-            <time class="post-time" title="2018-04-28 13:06:24" datetime="2018-04-28T05:06:24.000Z"  itemprop="datePublished">2018-04-28</time>
+            <time class="post-time" title="2017-08-20 13:06:24" datetime="2017-08-20T05:06:24.000Z"  itemprop="datePublished">2017-08-20</time>
 
             <br id="mybreak"/>
             
 	<i class="icon icon-lg icon-folder-o"></i>
-	分类：<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/诗歌/">诗歌</a></li></ul>
+	分类：<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/分布式/">分布式</a></li></ul>
 
 
             <i>·</i>
@@ -227,20 +231,37 @@
             阅读本文可能花费您&nbsp;<span class="post-count">1</span>&nbsp;分钟
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h2 id="从前慢"><a href="#从前慢" class="headerlink" title="从前慢"></a>从前慢</h2><p> <br></p>
-<p> </p><p align="center">记得早先少年时 </p>
-<p> </p><p align="center">大家诚诚恳恳 </p>
-<p> </p><p align="center">说一句 是一句 </p>
-<p> </p><p align="center">清早上火车站 </p>
-<p> </p><p align="center">长街黑暗无行人 </p>
-<p> </p><p align="center">卖豆浆的小店冒着热气 </p>
+            <h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>Dubbo是一种分布式服务框架。 Webservice也是一种服务框架，但是webservice并不是分布式的服务框架，他需要结合F5实现负载均衡。因此，dubbo除了可以提供服务之外，还可以实现软负载均衡。它还提供了两个功能Monitor 监控中心和调用中心。</p>
+<h2 id="Dubbo架构"><a href="#Dubbo架构" class="headerlink" title="Dubbo架构"></a>Dubbo架构</h2><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/dubbo-architecture.png" alt="Dubbo架构" title="">
+                </div>
+                <div class="image-caption">Dubbo架构</div>
+            </figure>
+<h3 id="节点角色说明"><a href="#节点角色说明" class="headerlink" title="节点角色说明"></a>节点角色说明</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/架构解释.JPG" alt="节点角色说明" title="">
+                </div>
+                <div class="image-caption">节点角色说明</div>
+            </figure>
 <a id="more"></a>
-<p> </p><p align="center">从前的日色变得慢 </p>
-<p> </p><p align="center">车，马，邮件都慢 </p>
-<p> </p><p align="center">一生只够爱一个人 </p>
-<p> </p><p align="center">从前的锁也好看 </p>
-<p> </p><p align="center">钥匙精美有样子 </p>
-<p> </p><p align="center">你锁了 人家就懂了—木心 </p>
+<h3 id="调用关系说明"><a href="#调用关系说明" class="headerlink" title="调用关系说明"></a>调用关系说明</h3><ol>
+<li>服务容器负责启动，加载，运行服务提供者。</li>
+<li>服务提供者在启动时，向注册中心注册自己提供的服务。</li>
+<li>服务消费者在启动时，向注册中心订阅自己所需的服务。</li>
+<li>注册中心返回服务提供者地址列表给消费者，如果有变更，注册中心将基于长连接推送变更数据给消费者。</li>
+<li>服务消费者，从提供者地址列表中，基于软负载均衡算法，选一台提供者进行调用，如果调用失败，再选另一台调用。</li>
+<li>服务消费者和提供者，在内存中累计调用次数和调用时间，定时每分钟发送一次统计数据到监控中心。</li>
+</ol>
+<h3 id="关于Dubbo架构的案例举例"><a href="#关于Dubbo架构的案例举例" class="headerlink" title="关于Dubbo架构的案例举例"></a>关于Dubbo架构的案例举例</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/dubbo原理举例.png" alt="架构举例" title="">
+                </div>
+                <div class="image-caption">架构举例</div>
+            </figure>
 
         </div>
 
@@ -248,12 +269,12 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2018-05-04T10:10:11.731Z" itemprop="dateUpdated">2018-05-04 18:10:11</time>
+    Última actualización<time datetime="2018-06-07T04:53:38.753Z" itemprop="dateUpdated">2018-06-07 12:53:38</time>
 </span>
 
 
         
-        原文链接：<a href="/posts/24768/" target="_blank" rel="external">http://ellisl.club/posts/24768/</a>
+        原文链接：<a href="/posts/41159/" target="_blank" rel="external">http://ellisl.club/posts/41159/</a>
         
     </div>
     <footer>
@@ -275,7 +296,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/poem/">poem</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/分布式/">分布式</a></li></ul>
 
 
             
@@ -285,7 +306,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://ellisl.club/posts/24768/&title=《从前慢》 — 文强的博客&pic=http://ellisl.club/img/head.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://ellisl.club/posts/41159/&title=《Dubbo分布式服务框架》 — 文强的博客&pic=http://ellisl.club/img/head.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -295,28 +316,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://ellisl.club/posts/24768/&title=《从前慢》 — 文强的博客&source=从前慢 
- 记得早先少年时 
- 大家诚诚恳恳 
- 说一句 是一句 
- 清早上火车站 
- 长街黑暗无行人 
- 卖豆浆的小店冒着热气 " data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://ellisl.club/posts/41159/&title=《Dubbo分布式服务框架》 — 文强的博客&source=基本概念Dubbo是一种分布式服务框架。 Webservice也是一种服务框架，但是webservice并不是分布式的服务框架，他需要结合F5实现负载均衡..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://ellisl.club/posts/24768/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://ellisl.club/posts/41159/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《从前慢》 — 文强的博客&url=http://ellisl.club/posts/24768/&via=http://ellisl.club" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Dubbo分布式服务框架》 — 文强的博客&url=http://ellisl.club/posts/41159/&via=http://ellisl.club" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://ellisl.club/posts/24768/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://ellisl.club/posts/41159/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -347,12 +362,6 @@
     </div>
   
 
-  
-    <div class="waves-block waves-effect next">
-      <a href="/posts/41159/" id="post-next" class="post-nav-link">
-        <h4 class="title" data-hover="下一篇：Dubbo分布式服务框架及Zookeeper">下一篇：Dubbo分布式服务框架及Zookeeper</h4>
-      </a>
-    </div>
   
 </nav>
 
@@ -406,7 +415,7 @@
         </span>
         <br/>
 
-        <span class="license">This blog is licensed under a <a rel="license" rel="external nofollow" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        <span class="license">Este blog está licenciado bajo una <a rel="license" rel="external nofollow" href="https://creativecommons.org/licenses/by/4.0/">licencia internacional Creative Commons Attribution 4.0</a>.</span>
     </div>
 </footer>
 
@@ -449,7 +458,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://ellisl.club/posts/24768/&title=《从前慢》 — 文强的博客&pic=http://ellisl.club/img/head.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://ellisl.club/posts/41159/&title=《Dubbo分布式服务框架》 — 文强的博客&pic=http://ellisl.club/img/head.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -459,28 +468,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://ellisl.club/posts/24768/&title=《从前慢》 — 文强的博客&source=从前慢 
- 记得早先少年时 
- 大家诚诚恳恳 
- 说一句 是一句 
- 清早上火车站 
- 长街黑暗无行人 
- 卖豆浆的小店冒着热气 " data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://ellisl.club/posts/41159/&title=《Dubbo分布式服务框架》 — 文强的博客&source=基本概念Dubbo是一种分布式服务框架。 Webservice也是一种服务框架，但是webservice并不是分布式的服务框架，他需要结合F5实现负载均衡..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://ellisl.club/posts/24768/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://ellisl.club/posts/41159/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《从前慢》 — 文强的博客&url=http://ellisl.club/posts/24768/&via=http://ellisl.club" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Dubbo分布式服务框架》 — 文强的博客&url=http://ellisl.club/posts/41159/&via=http://ellisl.club" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://ellisl.club/posts/24768/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://ellisl.club/posts/41159/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -491,7 +494,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p class="wechatshare">扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABvklEQVR42u3ay2oDMRAEQP//T28g12DRrZdNKJ2C2axLPgyaab1e8Xp+V/LM3yfHn79OLFxc3GXuM1zvXj1+Pv+v3ICLi3ufOy5e+TbyHyJ5Dy4u7vdz57b07qCDi4v7P7jjTxJ0QsfFxf0ebnIEmWtmxo3QwV4NFxd3gdsOTE/8fXC+i4uLW3KfcuURS37EKb4dFxf3Cjc5fLTxyVz0UoxicXFxD3N3jTg3tCuJChcX9wp3veFpr2TNxTYRGhcX9wB3pTC1LVB+xInOZbi4uFu5+W7a6LRtiqISiYuLe4XbQudGJ/n1i6iA4uLiHubmZaUtUrvaHlxc3Pvc9mvmhqp5+zQOWnBxcW9ykyLybFptHIuLi3ufuxJ+rF+zyGe6uLi4N7l5mJoUprmiVg9lcHFxD3PnApK5VicviG/fiYuLe5HbXpioL1Hlw9CkkOHi4l7hzg01kmFo2wgVdlxc3GPctqDMxSdz8WodvuLi4m7l5sOLdlySb6zYMC4u7kVuXrza59sWaDINxsXF/RC3jWNbXPQMLi7uV3J3habt5QxcXNz73JU2JgpC7o9FcHFxLw5Mi6KzENzi4uJ+iPsD29UGHKpmDOkAAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABxElEQVR42u3ay46DMAwF0P7/T3fWowq4tkPKjA4r1NLk0IXlR16v+HqfXp/PHP328/PXHRcuLu6YO6EkK5yvmRtwcXH3c48QvaWP7o9ePjHg4uI+mXu+ZZ7o4OLi/lduskJS/ODi4j6Tm6cs+WZr0yZcXNyd3Pk28/tb+ru4uLgtbq/ReZ6+9MqhaHdcXNwt3DygJMOVfIyapy+4uLjf4k5yiSRgzc9XLEt9cHFxA+6qxKX3StWkBxcXdw83P3RVTVlyaDl5wsXF3cKtZkO9JkhvJHORNuHi4m7hVoPU4qpr7bgFFxd3zK0unT+fH+k4D464uLh7uPMxavO/iVu0v9bExcXdwi20KYvNjryNUm2a4OLi7uFWE45q2JqXT4UvcHFxF3HzsFVtmPYGJxc2XFzcr3KTUFV9jTzkLZsJ4+LiDrjVhKZaxuTJzcUzuLi4N3Pfxat6MCJPd6JyCBcXdwu3dwijGp56DZfqMAYXF3ctN29n5H3LSalTPieCi4t7G7daFE0aH3nxg4uL+xe5+ShlMnQ5bJji4uI+jDspYEbhDBcXdyN3HnrykNc78oWLi7uTmzdMq8OY3lg3P7aFi4t7A/cHwVRI5yIjBPMAAAAASUVORK5CYII=" alt="微信分享二维码">
 </div>
 
 

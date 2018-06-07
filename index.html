@@ -6,7 +6,7 @@
     
     
     
-    <title>Ellis | 一个萌萌哒小码农</title>
+    <title>文强的博客</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#77AAFF">
@@ -39,18 +39,18 @@
 
 
     
-    <meta name="description" content="Ellis">
+    <meta name="description" content="一个萌萌哒小码农">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Ellis">
+<meta property="og:title" content="文强的博客">
 <meta property="og:url" content="http://ellisl.club/index.html">
-<meta property="og:site_name" content="Ellis">
-<meta property="og:description" content="Ellis">
+<meta property="og:site_name" content="文强的博客">
+<meta property="og:description" content="一个萌萌哒小码农">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ellis">
-<meta name="twitter:description" content="Ellis">
+<meta name="twitter:title" content="文强的博客">
+<meta name="twitter:description" content="一个萌萌哒小码农">
     
-        <link rel="alternate" type="application/atom+xml" title="Ellis" href="/atom.xml">
+        <link rel="alternate" type="application/atom+xml" title="文强的博客" href="/atom.xml">
     
     <link rel="shortcut icon" href="/img/favicon.ico">
     <link id="style" rel="stylesheet" href="/css/style.css?v=3.0">
@@ -152,13 +152,13 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Ellis</div>
+        <div class="flex-col header-title ellipsis">文强的博客</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="検索">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Búsqueda">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -176,12 +176,12 @@
         <div id="myheader">
             <h1 class="title">
                  
-                    Ellis
+                    文强的博客
                 
             </h1>
             <h5 class="subtitle">
                 
-                    在Web全栈的道路上努力前行
+                    
                 
             </h5>
         </div>
@@ -223,7 +223,54 @@
     
         <div>
             <a href="/posts/56977/" class="post-more waves-button">
-                続きを読む…
+                Leer más
+            </a>
+        </div>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SSM/">SSM</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-Zookeeper"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a href="/posts/11921/">SpringMVC入门篇(1)</a>
+    </h3>
+  
+
+
+
+
+     <div class="post-meta">
+        <time class="post-time" title="2018-05-16 15:28:31" datetime="2018-05-16T07:28:31.000Z"  itemprop="datePublished">2018-05-16</time>
+
+    </div>
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        <h2 id="Zookeeper简述"><a href="#Zookeeper简述" class="headerlink" title="Zookeeper简述"></a>Zookeeper简述</h2><ol>
+<li>Zookeeper是Apache Hadoop的一个子项目，作为分布式协调作用（类似于我们的大脑），树形的目录结构，支持变更操作，同时也是Dubbo官方推荐的注册中心。</li>
+<li>Zookeeper之所以能用来作为dubbo的注册中心来使用，主要是应用到dubbo的命名功能.在SOA架构、集群和分布式环境下，子项目之间的调用关系会变得越来越复杂，因为需要一个服务器专门给我们管理服务的信息和调节、管理这些服务，让我们的侧重点放在项目中的业务上，因为zookeeper的命名功能就可以充当这样一个服务器。</li>
+</ol>
+<h3 id="Zookeeper的实现原理"><a href="#Zookeeper的实现原理" class="headerlink" title="Zookeeper的实现原理"></a>Zookeeper的实现原理</h3><p>Zookeeper会维护一个类似于标准的文件系统的具有层次关系的数据结构。这个文件系统中每个子目录项都被称为znode节点，这个znode节点也可以有子节点，每个节点都可以存储数据，客户端也可以对这些node节点进行getChildren，getData,exists方法，同时也可以在znode tree路径上设置watch（类似于监听），当watch路径上发生节点create、delete、update的时候，会通知到client。client可以得到通知后，再获取数据，执行业务逻辑操作。<br>Zookeeper 的作用主要是用来维护和监控存储的node节点上这些数据的状态变化，通过监控这些数据状态的变化，从而达到基于数据的集群管理。</p>
+    
+        <div>
+            <a href="/posts/11921/" class="post-more waves-button">
+                Leer más
             </a>
         </div>
     </div>
@@ -270,7 +317,7 @@
     
         <div>
             <a href="/posts/4780/" class="post-more waves-button">
-                続きを読む…
+                Leer más
             </a>
         </div>
     </div>
@@ -319,7 +366,7 @@
     
         <div>
             <a href="/posts/13919/" class="post-more waves-button">
-                続きを読む…
+                Leer más
             </a>
         </div>
     </div>
@@ -364,7 +411,7 @@
     
         <div>
             <a href="/posts/25673/" class="post-more waves-button">
-                続きを読む…
+                Leer más
             </a>
         </div>
     </div>
@@ -380,7 +427,7 @@
         </li>
     
         <li class="post-list-item fade">
-            <article id="post-poem"
+            <article id="post-Dubbo"
   class="article-card article-type-post" itemprop="blogPost">
 
     
@@ -388,7 +435,7 @@
 
   
     <h3 class="post-title" itemprop="name">
-      <a href="/posts/24768/">从前慢</a>
+      <a href="/posts/41159/">Dubbo分布式服务框架</a>
     </h3>
   
 
@@ -396,31 +443,39 @@
 
 
      <div class="post-meta">
-        <time class="post-time" title="2018-04-28 13:06:24" datetime="2018-04-28T05:06:24.000Z"  itemprop="datePublished">2018-04-28</time>
+        <time class="post-time" title="2017-08-20 13:06:24" datetime="2017-08-20T05:06:24.000Z"  itemprop="datePublished">2017-08-20</time>
 
     </div>
 
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        <h2 id="从前慢"><a href="#从前慢" class="headerlink" title="从前慢"></a>从前慢</h2><p> <br></p>
-<p> </p><p align="center">记得早先少年时 </p>
-<p> </p><p align="center">大家诚诚恳恳 </p>
-<p> </p><p align="center">说一句 是一句 </p>
-<p> </p><p align="center">清早上火车站 </p>
-<p> </p><p align="center">长街黑暗无行人 </p>
-<p> </p><p align="center">卖豆浆的小店冒着热气 </p>
+        <h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>Dubbo是一种分布式服务框架。 Webservice也是一种服务框架，但是webservice并不是分布式的服务框架，他需要结合F5实现负载均衡。因此，dubbo除了可以提供服务之外，还可以实现软负载均衡。它还提供了两个功能Monitor 监控中心和调用中心。</p>
+<h2 id="Dubbo架构"><a href="#Dubbo架构" class="headerlink" title="Dubbo架构"></a>Dubbo架构</h2><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/dubbo-architecture.png" alt="Dubbo架构" title="">
+                </div>
+                <div class="image-caption">Dubbo架构</div>
+            </figure>
+<h3 id="节点角色说明"><a href="#节点角色说明" class="headerlink" title="节点角色说明"></a>节点角色说明</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/架构解释.JPG" alt="节点角色说明" title="">
+                </div>
+                <div class="image-caption">节点角色说明</div>
+            </figure>
     
         <div>
-            <a href="/posts/24768/" class="post-more waves-button">
-                続きを読む…
+            <a href="/posts/41159/" class="post-more waves-button">
+                Leer más
             </a>
         </div>
     </div>
     
     <div class="post-footer">
         
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/poem/">poem</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/分布式/">分布式</a></li></ul>
 
     </div>
     
@@ -470,7 +525,7 @@
         </span>
         <br/>
 
-        <span class="license">このブログの内容物は<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際ライセンスの下に提供されています</a></span>
+        <span class="license">Este blog está licenciado bajo una <a rel="license" rel="external nofollow" href="https://creativecommons.org/licenses/by/4.0/">licencia internacional Creative Commons Attribution 4.0</a>.</span>
     </div>
 </footer>
 
