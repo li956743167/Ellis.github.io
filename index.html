@@ -6,7 +6,7 @@
     
     
     
-    <title>文强的博客</title>
+    <title>Ellis&#39;blog</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#77AAFF">
@@ -41,16 +41,16 @@
     
     <meta name="description" content="一个萌萌哒小码农">
 <meta property="og:type" content="website">
-<meta property="og:title" content="文强的博客">
+<meta property="og:title" content="Ellis&#39;blog">
 <meta property="og:url" content="http://ellisl.club/index.html">
-<meta property="og:site_name" content="文强的博客">
+<meta property="og:site_name" content="Ellis&#39;blog">
 <meta property="og:description" content="一个萌萌哒小码农">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="文强的博客">
+<meta name="twitter:title" content="Ellis&#39;blog">
 <meta name="twitter:description" content="一个萌萌哒小码农">
     
-        <link rel="alternate" type="application/atom+xml" title="文强的博客" href="/atom.xml">
+        <link rel="alternate" type="application/atom+xml" title="Ellis&#39;blog" href="/atom.xml">
     
     <link rel="shortcut icon" href="/img/favicon.ico">
     <link id="style" rel="stylesheet" href="/css/style.css?v=3.0">
@@ -152,7 +152,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">文强的博客</div>
+        <div class="flex-col header-title ellipsis">Ellis&#39;blog</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -176,7 +176,7 @@
         <div id="myheader">
             <h1 class="title">
                  
-                    文强的博客
+                    Ellis&#39;blog
                 
             </h1>
             <h5 class="subtitle">
@@ -239,53 +239,6 @@
         </li>
     
         <li class="post-list-item fade">
-            <article id="post-Zookeeper"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/posts/11921/">Zookeeper</a>
-    </h3>
-  
-
-
-
-
-     <div class="post-meta">
-        <time class="post-time" title="2018-05-16 15:28:31" datetime="2018-05-16T07:28:31.000Z"  itemprop="datePublished">2018-05-16</time>
-
-    </div>
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        <h2 id="Zookeeper简述"><a href="#Zookeeper简述" class="headerlink" title="Zookeeper简述"></a>Zookeeper简述</h2><ol>
-<li>Zookeeper是Apache Hadoop的一个子项目，作为分布式协调作用（类似于我们的大脑），树形的目录结构，支持变更操作，同时也是Dubbo官方推荐的注册中心。</li>
-<li>Zookeeper之所以能用来作为dubbo的注册中心来使用，主要是应用到dubbo的命名功能.在SOA架构、集群和分布式环境下，子项目之间的调用关系会变得越来越复杂，因为需要一个服务器专门给我们管理服务的信息和调节、管理这些服务，让我们的侧重点放在项目中的业务上，因为zookeeper的命名功能就可以充当这样一个服务器。</li>
-</ol>
-<h3 id="Zookeeper的实现原理"><a href="#Zookeeper的实现原理" class="headerlink" title="Zookeeper的实现原理"></a>Zookeeper的实现原理</h3><p>Zookeeper会维护一个类似于标准的文件系统的具有层次关系的数据结构。这个文件系统中每个子目录项都被称为znode节点，这个znode节点也可以有子节点，每个节点都可以存储数据，客户端也可以对这些node节点进行getChildren，getData,exists方法，同时也可以在znode tree路径上设置watch（类似于监听），当watch路径上发生节点create、delete、update的时候，会通知到client。client可以得到通知后，再获取数据，执行业务逻辑操作。<br>Zookeeper 的作用主要是用来维护和监控存储的node节点上这些数据的状态变化，通过监控这些数据状态的变化，从而达到基于数据的集群管理。</p>
-    
-        <div>
-            <a href="/posts/11921/" class="post-more waves-button">
-                Continue reading...
-            </a>
-        </div>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/分布式/">分布式</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
             <article id="post-SpringMVC入门1"
   class="article-card article-type-post" itemprop="blogPost">
 
@@ -325,6 +278,53 @@
     <div class="post-footer">
         
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SSM/">SSM</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-Zookeeper"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a href="/posts/11921/">Zookeeper</a>
+    </h3>
+  
+
+
+
+
+     <div class="post-meta">
+        <time class="post-time" title="2018-05-16 15:28:31" datetime="2018-05-16T07:28:31.000Z"  itemprop="datePublished">2018-05-16</time>
+
+    </div>
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        <h2 id="Zookeeper简述"><a href="#Zookeeper简述" class="headerlink" title="Zookeeper简述"></a>Zookeeper简述</h2><ol>
+<li>Zookeeper是Apache Hadoop的一个子项目，作为分布式协调作用（类似于我们的大脑），树形的目录结构，支持变更操作，同时也是Dubbo官方推荐的注册中心。</li>
+<li>Zookeeper之所以能用来作为dubbo的注册中心来使用，主要是应用到dubbo的命名功能.在SOA架构、集群和分布式环境下，子项目之间的调用关系会变得越来越复杂，因为需要一个服务器专门给我们管理服务的信息和调节、管理这些服务，让我们的侧重点放在项目中的业务上，因为zookeeper的命名功能就可以充当这样一个服务器。</li>
+</ol>
+<h3 id="Zookeeper的实现原理"><a href="#Zookeeper的实现原理" class="headerlink" title="Zookeeper的实现原理"></a>Zookeeper的实现原理</h3><p>Zookeeper会维护一个类似于标准的文件系统的具有层次关系的数据结构。这个文件系统中每个子目录项都被称为znode节点，这个znode节点也可以有子节点，每个节点都可以存储数据，客户端也可以对这些node节点进行getChildren，getData,exists方法，同时也可以在znode tree路径上设置watch（类似于监听），当watch路径上发生节点create、delete、update的时候，会通知到client。client可以得到通知后，再获取数据，执行业务逻辑操作。<br>Zookeeper 的作用主要是用来维护和监控存储的node节点上这些数据的状态变化，通过监控这些数据状态的变化，从而达到基于数据的集群管理。</p>
+    
+        <div>
+            <a href="/posts/11921/" class="post-more waves-button">
+                Continue reading...
+            </a>
+        </div>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/分布式/">分布式</a></li></ul>
 
     </div>
     

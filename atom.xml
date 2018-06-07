@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>文强的博客</title>
+  <title>Ellis&#39;blog</title>
   
   
   <link href="/atom.xml" rel="self"/>
@@ -39,28 +39,6 @@
   </entry>
   
   <entry>
-    <title>Zookeeper</title>
-    <link href="http://ellisl.club//posts/11921/"/>
-    <id>http://ellisl.club//posts/11921/</id>
-    <published>2018-05-16T07:28:31.000Z</published>
-    <updated>2018-06-07T11:23:27.283Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Zookeeper简述"><a href="#Zookeeper简述" class="headerlink" title="Zookeeper简述"></a>Zookeeper简述</h2><ol><li>Zookeeper是Apache Hadoop的一个子项目，作为分布式协调作用（类似于我们的大脑），树形的目录结构，支持变更操作，同时也是Dubbo官方推荐的注册中心。</li><li>Zookeeper之所以能用来作为dubbo的注册中心来使用，主要是应用到dubbo的命名功能.在SOA架构、集群和分布式环境下，子项目之间的调用关系会变得越来越复杂，因为需要一个服务器专门给我们管理服务的信息和调节、管理这些服务，让我们的侧重点放在项目中的业务上，因为zookeeper的命名功能就可以充当这样一个服务器。</li></ol><h3 id="Zookeeper的实现原理"><a href="#Zookeeper的实现原理" class="headerlink" title="Zookeeper的实现原理"></a>Zookeeper的实现原理</h3><p>Zookeeper会维护一个类似于标准的文件系统的具有层次关系的数据结构。这个文件系统中每个子目录项都被称为znode节点，这个znode节点也可以有子节点，每个节点都可以存储数据，客户端也可以对这些node节点进行getChildren，getData,exists方法，同时也可以在znode tree路径上设置watch（类似于监听），当watch路径上发生节点create、delete、update的时候，会通知到client。client可以得到通知后，再获取数据，执行业务逻辑操作。<br>Zookeeper 的作用主要是用来维护和监控存储的node节点上这些数据的状态变化，通过监控这些数据状态的变化，从而达到基于数据的集群管理。</p><a id="more"></a><h3 id="为什么要用Zookeeper作为注册服务中心"><a href="#为什么要用Zookeeper作为注册服务中心" class="headerlink" title="为什么要用Zookeeper作为注册服务中心?"></a>为什么要用Zookeeper作为注册服务中心?</h3><p>Zookeeper的数据模型是由一系列的Znode数据节点组成，和文件系统类似。但是与传统的磁盘文件系统不同的是，首先，zookeeper的数据全部存储在内存中，性能高；其次，zookeeper也支持集群，实现了高可用；同时基于zookeeper的特性,也支持事件监听（服务的暴露方发生变化，可以进行推送），因为zookeeper适合作为dubbo的注册中心区使用。</p><p>同时redis、Simple也可以作为dubbo的注册中心来使用。</p><p>redis:<br>    Redis:用key-value（Hash）来存储数据<br>       主key:服务器名和类型<br>       Map中的key：url地址<br>       Map中的value：过期时间，判断脏数据，脏数据由监控中心删除（要求服务器时间必须相同）<br>    利用redis中的Publish/Subscribe事件通知数据变更<br>    总之，redis作为注册中心来使用的话，支持集群，性能高，但是要求所有服务器的时间必须同步，要求较高。（redis作为注册中心来使用，有的公司也在采用）<br>Simple:<br>    本身就是一个普通的dubbo服务，能减少第三方依赖，不支持集群，不适合生产环境。</p><h3 id="在linux系统上配置Zookeeper"><a href="#在linux系统上配置Zookeeper" class="headerlink" title="在linux系统上配置Zookeeper"></a>在linux系统上配置Zookeeper</h3>]]></content>
-    
-    <summary type="html">
-    
-      生命在于折腾
-    
-    </summary>
-    
-      <category term="分布式" scheme="http://ellisl.club/categories/%E5%88%86%E5%B8%83%E5%BC%8F/"/>
-    
-    
-      <category term="分布式" scheme="http://ellisl.club/tags/%E5%88%86%E5%B8%83%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
     <title>SpringMVC入门篇(1)</title>
     <link href="http://ellisl.club//posts/4780/"/>
     <id>http://ellisl.club//posts/4780/</id>
@@ -79,6 +57,28 @@
     
     
       <category term="SSM" scheme="http://ellisl.club/tags/SSM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Zookeeper</title>
+    <link href="http://ellisl.club//posts/11921/"/>
+    <id>http://ellisl.club//posts/11921/</id>
+    <published>2018-05-16T07:28:31.000Z</published>
+    <updated>2018-06-07T11:23:27.283Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Zookeeper简述"><a href="#Zookeeper简述" class="headerlink" title="Zookeeper简述"></a>Zookeeper简述</h2><ol><li>Zookeeper是Apache Hadoop的一个子项目，作为分布式协调作用（类似于我们的大脑），树形的目录结构，支持变更操作，同时也是Dubbo官方推荐的注册中心。</li><li>Zookeeper之所以能用来作为dubbo的注册中心来使用，主要是应用到dubbo的命名功能.在SOA架构、集群和分布式环境下，子项目之间的调用关系会变得越来越复杂，因为需要一个服务器专门给我们管理服务的信息和调节、管理这些服务，让我们的侧重点放在项目中的业务上，因为zookeeper的命名功能就可以充当这样一个服务器。</li></ol><h3 id="Zookeeper的实现原理"><a href="#Zookeeper的实现原理" class="headerlink" title="Zookeeper的实现原理"></a>Zookeeper的实现原理</h3><p>Zookeeper会维护一个类似于标准的文件系统的具有层次关系的数据结构。这个文件系统中每个子目录项都被称为znode节点，这个znode节点也可以有子节点，每个节点都可以存储数据，客户端也可以对这些node节点进行getChildren，getData,exists方法，同时也可以在znode tree路径上设置watch（类似于监听），当watch路径上发生节点create、delete、update的时候，会通知到client。client可以得到通知后，再获取数据，执行业务逻辑操作。<br>Zookeeper 的作用主要是用来维护和监控存储的node节点上这些数据的状态变化，通过监控这些数据状态的变化，从而达到基于数据的集群管理。</p><a id="more"></a><h3 id="为什么要用Zookeeper作为注册服务中心"><a href="#为什么要用Zookeeper作为注册服务中心" class="headerlink" title="为什么要用Zookeeper作为注册服务中心?"></a>为什么要用Zookeeper作为注册服务中心?</h3><p>Zookeeper的数据模型是由一系列的Znode数据节点组成，和文件系统类似。但是与传统的磁盘文件系统不同的是，首先，zookeeper的数据全部存储在内存中，性能高；其次，zookeeper也支持集群，实现了高可用；同时基于zookeeper的特性,也支持事件监听（服务的暴露方发生变化，可以进行推送），因为zookeeper适合作为dubbo的注册中心区使用。</p><p>同时redis、Simple也可以作为dubbo的注册中心来使用。</p><p>redis:<br>    Redis:用key-value（Hash）来存储数据<br>       主key:服务器名和类型<br>       Map中的key：url地址<br>       Map中的value：过期时间，判断脏数据，脏数据由监控中心删除（要求服务器时间必须相同）<br>    利用redis中的Publish/Subscribe事件通知数据变更<br>    总之，redis作为注册中心来使用的话，支持集群，性能高，但是要求所有服务器的时间必须同步，要求较高。（redis作为注册中心来使用，有的公司也在采用）<br>Simple:<br>    本身就是一个普通的dubbo服务，能减少第三方依赖，不支持集群，不适合生产环境。</p><h3 id="在linux系统上配置Zookeeper"><a href="#在linux系统上配置Zookeeper" class="headerlink" title="在linux系统上配置Zookeeper"></a>在linux系统上配置Zookeeper</h3>]]></content>
+    
+    <summary type="html">
+    
+      生命在于折腾
+    
+    </summary>
+    
+      <category term="分布式" scheme="http://ellisl.club/categories/%E5%88%86%E5%B8%83%E5%BC%8F/"/>
+    
+    
+      <category term="分布式" scheme="http://ellisl.club/tags/%E5%88%86%E5%B8%83%E5%BC%8F/"/>
     
   </entry>
   
