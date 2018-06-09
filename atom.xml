@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ellisl.club/"/>
-  <updated>2018-05-16T13:47:49.171Z</updated>
+  <updated>2018-06-09T05:17:49.653Z</updated>
   <id>http://ellisl.club/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Spring</title>
+    <link href="http://ellisl.club//posts/18155/"/>
+    <id>http://ellisl.club//posts/18155/</id>
+    <published>2018-05-17T07:28:31.000Z</published>
+    <updated>2018-06-09T05:17:49.653Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Spring入门"><a href="#Spring入门" class="headerlink" title="Spring入门"></a>Spring入门</h2><h3 id="Spring简介概述"><a href="#Spring简介概述" class="headerlink" title="Spring简介概述"></a>Spring简介概述</h3><p>是为了解决企业级开发的复杂性的!<br>是一个分层的se/ee(javase和java ee)一站式轻量级开源框架</p><h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><ol><li><p>Spring是一个开元的轻量级的应用开发框架，其目的是用于简化企业级应用程序开发，减少侵入； </p></li><li><p>Spring的IOC和AOP应用，将组件的耦合度降至最低，即解耦，便于系统的维护和升级； </p></li><li><p>可以与第三方框架和技术整合应用，可以自由选择技术进行开发。</p></li></ol><h3 id="常用注解"><a href="#常用注解" class="headerlink" title="常用注解"></a>常用注解</h3><a id="more"></a><pre><code>@Component    ----------&gt;  为通用注解@Repository   ----------&gt;  为持久层组件注解@Service      ----------&gt;  为业务层组件注解@Controller   ----------&gt;  为控制层注解@Scope        ----------&gt;  为Bean的作用域注解@Autowired    ----------&gt;  为指定Bean之间依赖关系的注解@Inject       ----------&gt;  为指定Bean之间依赖关系的注解@Value        ----------&gt;  为注入Spring表达式值的注解@ResponseBody ----------&gt;  为Ajax返回类型的注解</code></pre><h3 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h3><p>同步请求与响应处理（普通浏览器请求，整个页面刷新）</p><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/img/Spring同步.png" alt="Spring同步请求" title="">                </div>                <div class="image-caption">Spring同步请求</div>            </figure><p>异步请求与响应处理（Ajax请求，页面局部刷新） </p><p><img src="/img/Spring异步.png" alt="Spring异步请求"></p><h3 id="IoC-–-DI"><a href="#IoC-–-DI" class="headerlink" title="IoC – DI"></a>IoC – DI</h3><p>IoC(控制反转时)</p><p>简单说就是将对象的创建权由我们手动创建转为由Spring容器去创建对象,将对象存储在Spring容器中,当程序中需要用到该对象的时候,直接从Spring容器中去获取对象即可</p><p>依赖注入（DI）</p><p>简单来说，一个系统中可能会有成千上万个对象。如果要手工维护它们之间的关系，这是不可想象的。我们可以在Spring的XML文件描述它们之间的关系，由Spring自动来注入它们——比如A类的实例需要B类的实例作为参数set进去。</p><h3 id="AOP"><a href="#AOP" class="headerlink" title="AOP"></a>AOP</h3><p>面向切面编程</p><p>面向切面编程是一种编程思想，将系统中非核心的业务提取出来，进行单独处理</p><p>就以日志系统为例。在执行某个操作前后都需要输出日志，如果手工加代码，那简直太可怕了。而且等代码庞大起来，也是非常难维护的一种情况。这里就需要面向切面来编程</p><h4 id="AOP核心概念"><a href="#AOP核心概念" class="headerlink" title="AOP核心概念"></a>AOP核心概念</h4><p><strong>Aspect</strong>（切面）—切面，是对交叉业务逻辑的统称。 </p><p><strong>Joinpoint</strong>（连接点）—连接点，指切面可以织入到目标对象的位置（方法，属性等）。 </p><p><strong>Advice</strong>（通知）—通知，指切面的具体实现。 </p><p><strong>Pointcut</strong>（切入点）—切入点，指通知应用到哪些类的哪些方法或属性之上的规则。 </p><p><strong>Introduction</strong>（引入）—引入，指动态地给一个对象增加方法或属性的一种特殊的通知。 </p><p><strong>Weaving</strong>（织入）—织入，指将通知插入到目标对象。 </p><p><strong>Target</strong>（目标对象）—目标对象，指需要织入切面的对象。 </p><p><strong>Proxy</strong>（代理对象）—代理对象，指切面织入目标对象之后形成的对象。</p><h3 id="Spring-事务管理"><a href="#Spring-事务管理" class="headerlink" title="Spring 事务管理"></a>Spring 事务管理</h3><h4 id="事务管理"><a href="#事务管理" class="headerlink" title="事务管理"></a>事务管理</h4><p>一个数据库事务是一个被视为单一的工作单元的操作序列。这些操作应该要么完整地执行，要么完全不执行。事务管理是一个重要组成部分，RDBMS 面向企业应用程序，以确保数据完整性和一致性。事务的概念可以描述为具有以下四个关键属性说成是 ACID：</p><p><strong>原子性</strong>：事务应该当作一个单独单元的操作，这意味着整个序列操作要么是成功，要么是失败的。</p><p><strong>一致性</strong>：这表示数据库的引用完整性的一致性，表中唯一的主键等。</p><p><strong>隔离性</strong>：可能同时处理很多有相同的数据集的事务，每个事务应该与其他事务隔离，以防止数据损坏。</p><p><strong>持久性</strong>：一个事务一旦完成全部操作后，这个事务的结果必须是永久性的，不能因系统故障而从数据库中删除。</p><h4 id="浅谈Spring的事务管理"><a href="#浅谈Spring的事务管理" class="headerlink" title="浅谈Spring的事务管理"></a>浅谈Spring的事务管理</h4><p>Spring提供的事务管理分为两类: 编程式的和声明式的<br>编程式的比较灵活,但是代码量大,存在重复的代码比较多<br>声明式的比编程式的更灵活.</p><p><strong>编程式</strong>:主要使用transactionTemplate.省略了部分的提交,回滚,一系列的事务对象定义,需要注入事务管理对象.</p><p><strong>声明式</strong>:使用TransactionProxyFactoryBean 围绕Proxy的动态代理,能够自动的提交和回滚事务</p><h4 id="事物拦截器的实现原理。"><a href="#事物拦截器的实现原理。" class="headerlink" title="事物拦截器的实现原理。"></a>事物拦截器的实现原理。</h4><p>spring中的事务管理是通过AOP代理来实现的，对被代理对象的每个方法进行拦截,<br>在方法执行前启动事务,方法执行完后根据是否有异常和异常的种类进行提交或回滚。</p>]]></content>
+    
+    <summary type="html">
+    
+      生命在于折腾
+    
+    </summary>
+    
+      <category term="框架" scheme="http://ellisl.club/categories/%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="Spring" scheme="http://ellisl.club/tags/Spring/"/>
+    
+  </entry>
   
   <entry>
     <title>SpringMVC入门篇(2)</title>
@@ -131,7 +153,7 @@
     <link href="http://ellisl.club//posts/41159/"/>
     <id>http://ellisl.club//posts/41159/</id>
     <published>2017-08-20T05:06:24.000Z</published>
-    <updated>2018-06-07T04:53:38.753Z</updated>
+    <updated>2018-06-07T13:11:16.804Z</updated>
     
     <content type="html"><![CDATA[<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>Dubbo是一种分布式服务框架。 Webservice也是一种服务框架，但是webservice并不是分布式的服务框架，他需要结合F5实现负载均衡。因此，dubbo除了可以提供服务之外，还可以实现软负载均衡。它还提供了两个功能Monitor 监控中心和调用中心。</p><h2 id="Dubbo架构"><a href="#Dubbo架构" class="headerlink" title="Dubbo架构"></a>Dubbo架构</h2><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/img/dubbo-architecture.png" alt="Dubbo架构" title="">                </div>                <div class="image-caption">Dubbo架构</div>            </figure><h3 id="节点角色说明"><a href="#节点角色说明" class="headerlink" title="节点角色说明"></a>节点角色说明</h3><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/img/架构解释.JPG" alt="节点角色说明" title="">                </div>                <div class="image-caption">节点角色说明</div>            </figure><a id="more"></a><h3 id="调用关系说明"><a href="#调用关系说明" class="headerlink" title="调用关系说明"></a>调用关系说明</h3><ol><li>服务容器负责启动，加载，运行服务提供者。</li><li>服务提供者在启动时，向注册中心注册自己提供的服务。</li><li>服务消费者在启动时，向注册中心订阅自己所需的服务。</li><li>注册中心返回服务提供者地址列表给消费者，如果有变更，注册中心将基于长连接推送变更数据给消费者。</li><li>服务消费者，从提供者地址列表中，基于软负载均衡算法，选一台提供者进行调用，如果调用失败，再选另一台调用。</li><li>服务消费者和提供者，在内存中累计调用次数和调用时间，定时每分钟发送一次统计数据到监控中心。</li></ol><h3 id="关于Dubbo架构的案例举例"><a href="#关于Dubbo架构的案例举例" class="headerlink" title="关于Dubbo架构的案例举例"></a>关于Dubbo架构的案例举例</h3><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/img/dubbo原理举例.png" alt="架构举例" title="">                </div>                <div class="image-caption">架构举例</div>            </figure>]]></content>
     
